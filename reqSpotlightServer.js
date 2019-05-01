@@ -7,6 +7,20 @@ const digitalOcean =(req, res)=>{
 	message += '...thats it.';
 	message += '</h3>';
 	message += enlargedURL;
+
+	switch(req.url.length){
+		case 0:
+			message = '<h1>Oh, try again, Mister Nothing!</h1>';
+		case 1:
+			message = '<h1>Ah, the loneliest number.</h1>';
+		case 2:
+			message = '<p><i>Hi.</i></p>';
+
+		default: 
+			var now = new Date();
+		 console.log("made it to default at " + now);
+	}
+
 	res.writeHead(200, '{"Content-Type": "text/html" } ');
 	console.log(true + "yeah");
 	res.end(message);
