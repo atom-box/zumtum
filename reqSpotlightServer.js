@@ -27,3 +27,16 @@ const digitalOcean =(req, res)=>{
 }
 
 http.createServer(digitalOcean).listen(2121);
+
+/*
+Turn it on 
+make stub object
+steer by that object
+parse by hand the areacode
+steer by part of new parsings
+display other part of parsing
+https://duckduckgo.com/?q=game+of+life&t=ffsb&ia=web
+
+
+https://en.wikipedia.org/wiki/The_Game_of_Life#/media/File:CheckeredGameofLife.jpg
+*/
