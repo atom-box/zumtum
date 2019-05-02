@@ -8,6 +8,11 @@ const digitalOcean =(req, res)=>{
 	message += '</h3>';
 	message += enlargedURL;
 
+	// try printing the request headers req.headers
+	var s = '';
+	for(var name in req.headers) s += name + ': ' + req.headers[name] + '/n';
+	message += 'New Part: ' + s;
+
 	switch(req.url.length){
 		case 0:
 			message = '<h1>Oh, try again, Mister Nothing!</h1>';
