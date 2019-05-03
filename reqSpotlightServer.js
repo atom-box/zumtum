@@ -1,4 +1,5 @@
 const http = require('http');
+console.time("sherbet");
 const digitalOcean =(req, res)=>{
 	let enlargedURL = '<div style="border: 5px solid #999;"><h1 style="font-family: arial; color: green; font-size: 7rem ">' +req.url+  '</h1></div>';
 	var headerThings = '';
@@ -10,29 +11,35 @@ const digitalOcean =(req, res)=>{
 	message += '...thats it.';
 	message += '</h2>';
 	message += enlargedURL;
-
+	var now;
 	
-
+	console.log('req url length is ' + req.url.length)
 	switch(req.url.length){
-		case 0:
-			message = '<h1>Oh, try again, Mister Nothing!</h1>';
 		case 1:
-			message = '<h1>Ah, the loneliest number.</h1>';
+			message = '<h1>Oh, try again, Mister Nothing!</h1>';
+			break;
 		case 2:
-			message = '<p><i>Hi.</i></p>';
-
+			message = '<h1>Ah, the loneliest number.</h1>';
+			break;
+		case 3:
+			now = new Date();
+			message = `<p><i>Q: What time is it?  A: ${now} </i></p>`;
+			break;
 		default: 
-			var now = new Date();
-		 console.log("made it to default at " + now);
+			now = new Date();
+		 	console.log("made it to default at " + now);
 	}
 
 	res.writeHead(200, '{"Content-Type": "text/html" } ');
-	console.log(true + "yeah");
+	now = new Date();
+
+	console.log(`GET at ${now}.`);
 	res.end(message);
 }
 
 http.createServer(digitalOcean).listen(2121);
-
+console.log("The port is 2121.");
+console.timeEnd("sherbet");
 /*
 Turn it on 
 make stub object
