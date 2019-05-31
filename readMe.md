@@ -1,7 +1,7 @@
 # Quanthum Magazine
 
 ## What's going on here
-Build a fake magazine site.  This should allow for lots of ways to 
+I'm building a fake magazine site.  This should allow for lots of ways to 
 integrate syntax that I'm trying out: ES5/6 functional **JS**, 
 better **HTML** descriptors, and **CSS**. Once I add 
 **MongoDB** it will 
