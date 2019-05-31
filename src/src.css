@@ -1,10 +1,11 @@
  :root{
-    --lightGray:#efeff4;
-    --darkGray:#4c4d4b;
-    --skyColor:#7cacff;
-    --palerSky:#a5dcff;
-    --infieldGreen:#34931c;
-    --tigersNavy:#071735
+    --ash: rgb(239, 239, 244); 
+    --darkGray: rgb(76, 77, 75);
+    --skyColor: rgb(124, 172, 255);
+    --palerSky: rgb(165, 220, 255 );
+    --chopRed: #d00;
+    --infieldGreen: rgb(52, 147, 28);
+    --tigersNavy: rgb(7, 23, 53);
 }
 button{
     margin-left:3rem
@@ -13,9 +14,9 @@ img{
     width:98%
 }
 .title__hoegarden{
-    text-shadow:1px 1px 2px black,0 0 25px gray,0 0 5px black;
+    text-shadow:1px 1px 2px yellow,0 0 3px white ,0 0 55px yellow;
     font-family:monospace;
-    color:white;
+    color:red;
     font-weight:500
 }
 .title__skinny{
@@ -24,36 +25,29 @@ img{
     text-indent:2.5rem;
     line-height:2.6rem
 }
-.elShadow{
-    box-shadow:0 7px 7px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    border:.1rem hidden;
-    border-radius:.3rem
+.curvy-div {
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.9rem;
+    border-width: 0.8rem;
+    border-style: solid;
+    margin: 0.5rem 2rem;
+    color:  #888 ;
+    padding: 0.5rem;
+    max-width: 50%;
 }
-.dashboard{
-    border:2px white;
-    margin:.5rem 2rem;
-    background-color:#444;
-    color:var(--lightGray);
-    padding:.5rem
+
+.curvy-div__light-border{
+    border-color:  var(--ash);
 }
-.dashboard__text{
-    margin:.3rem 1.5rem;
-    color:white
+
+.curvy-div__dark-border{
+    border-color:  var(--infieldGreen);
 }
-.dashboard__data-noneditable{
-    color:black;
-    background-color:#777
+
+.curvy-div__darker-border{
+    border-color:  var(--tigersNavy);
 }
-.codeboard{
-    border:5px dashed #bbb;
-    margin:.5rem 2rem;
-    background-color:#222;
-    padding:.5rem
-}
-.codeboard__code{
-    color:#aaf;
-    margin:.3rem 1.5rem .3rem 1.9rem
-}
+
 .block{
     background-color:var(--lightGray);
     margin:1rem;
