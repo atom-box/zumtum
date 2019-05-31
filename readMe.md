@@ -6,6 +6,8 @@ vanilla **JS**, better **HTML** descriptors, and **CSS**. Once I add
 **MongoDB** it will 
 be a fullstack and I can re-deploy it on my D.O. server instead of 
 Github as a static page.  
+## My companion
+[OReilly Book Cover](https://github.com/atom-box/quanta/blob/master/oreilly.jpg)
 ## Workflow
 * Write normal HTML/CSS in the SRC directory.  Keep a folder of images 
 there too. 
