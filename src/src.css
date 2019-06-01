@@ -80,6 +80,25 @@ button{
 .curvy-div__darker-border{
     border-color:  var(--tigersNavy);
 }
+.article-subject {
+    height:  2.6rem;
+    padding: 0.3rem;
+    margin: 0.1rem;
+    text-align: center;
+    float: left ;
+}
+.article-title {
+    clear: left;
+}
+.article-button {
+    width:  2.6rem;
+    height:  2.6rem;
+    border: 0.1rem solid #0b0;
+    padding: 0.3rem;
+    margin: 0.1rem;
+    text-align: center;
+    float: left ;
+}
 
 .block{
     background-color:var(--lightGray);
