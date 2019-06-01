@@ -8,15 +8,15 @@ better **HTML** descriptors, and **CSS**. Once I add
 be a fullstack and I can re-deploy it on my D.O. server instead of 
 Github as a static page.  
 ## Workflow
-* Write normal HTML/CSS in the SRC directory.  Keep a folder of images 
+* Write normal HTML/CSS in the DOCS directory.  Keep a folder of images 
 there too. 
 * The only workflow for now is, minify CSS/HTML by hand 
 (at [Browserling](http://browserling.com)) with copy/paste and move it 
 to BUILD.  
 * The BUILD directory is just a **Node.js** file.  
+* Not using any gulp.js yet.
 * The version of this page that runs from Github cannot run a node 
 sever, so it is just the HTML/CSS from the static page.   
-* Not using any gulp.js yet.
 ## To run
 `node.js qServer.js` will create a local host on 8080.
 ## Changelog
