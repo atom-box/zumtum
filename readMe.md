@@ -1,4 +1,4 @@
-# Quanthum Magazine
+# Zunthum Magazine (formerly Quanthum Magazine)
 
 ## What's going on here
 I'm building a fake magazine site.  This should allow for lots of ways to 
