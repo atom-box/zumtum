@@ -10,9 +10,7 @@
 button{
     margin-left:3rem
 }
-img{
-    width:98%
-}
+
 .title__hoegarden{
     text-shadow:1px 1px 2px yellow,0 0 3px white ,0 0 55px yellow;
     font-family:monospace;
@@ -21,25 +19,32 @@ img{
     font-weight:500;
 }
 .title__skinny{
+  padding: 14px 6px 0px 6px;
+  margin: 14px 6px 0px 6px;
+
     font-weight:100;
     font-size:.8rem;
     text-indent:2.5rem;
     line-height:2.6rem;
+    color: white;
     float: right;
 }
 
 .topnav {
   overflow: hidden;
   background-color: #333;
+  height: 75px;
 }
 
 .topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: auto 6px auto 6px;
+  margin: auto 6px auto 6px;
+    text-decoration: none;
   font-size: 17px;
+  height: 100%;
 }
 
 .topnav a:hover {
@@ -93,4 +98,10 @@ img{
 }
 .greentext{
     color:var(--infieldGreen)
+}
+
+#nav-logo {
+    float: right;
+  height: 75px;
+
 }
