@@ -19,5 +19,17 @@ view, no index.html file at all.
 * Not using any gulp.js yet.
 ## To run
 `node.js qServer.js` will create a local host on 8080.
+## Changelog
+* Add 4 buttons to articles: cut, info, calc, pics.
+* Create buttons and subject and title classes for article CSS.
+* Move logo to left and nav buttons right.  Add live navlinks.
+* Adjust sizes of the navbar div elements and text.
+* Add floats navbar in black.
+* Small quickie logo with log slice background.
+* Loop, print the request headers req.headers.
+* Make route display, big ,green ,sans. Add parser goals and example.
+* Add a switch statement to capture LENGTH of the route.
+* Make a two div route viewer.
+* Write a one route server that delivers a single line of minifed HTML.
 ## Most Valuable Player
 ![OReilly Book Cover](https://github.com/atom-box/quanta/blob/master/oreilly.jpg)
