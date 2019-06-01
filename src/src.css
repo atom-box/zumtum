@@ -93,7 +93,7 @@ button{
 .article-button {
     width:  2.6rem;
     height:  2.6rem;
-    border: 0.1rem solid #0b0;
+    border: 0.1rem transparent #0b0;
     padding: 0.3rem;
     margin: 0.1rem;
     text-align: center;
