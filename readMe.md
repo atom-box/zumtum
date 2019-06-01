@@ -13,9 +13,9 @@ there too.
 * The only workflow for now is, minify CSS/HTML by hand 
 (at [Browserling](http://browserling.com)) with copy/paste and move it 
 to BUILD.  
-* The BUILD directory is just a **Node.js** file.  For now it serves the 
-page as a single static 
-view, no index.html file at all.
+* The BUILD directory is just a **Node.js** file.  
+* The version of this page that runs from Github cannot run a node 
+sever, so it is just the HTML/CSS from the static page.   
 * Not using any gulp.js yet.
 ## To run
 `node.js qServer.js` will create a local host on 8080.
