@@ -1,10 +1,10 @@
 :root{
+    --color1__dark-header-footer: rgb(7, 23, 53);
+    --color2:  rgb(104, 94, 85);
+    --color3: rgb(240, 208, 138); 
     --ash: rgb(239, 239, 244); 
     --darkGray: rgb(76, 77, 75);
     --logoWood: rgb(162, 137, 89);
-    --palerSky: rgb(165, 220, 255 );
-    --chopRed: #d00;
-    --infieldGreen: rgb(52, 147, 28);
     --tigersNavy: rgb(7, 23, 53);
 }
 
@@ -22,6 +22,9 @@ button{
     margin-left:3rem
 }
 
+footer {
+  background-color: var(--color1__dark-header-footer);
+}
 
 .title__skinny{
   padding: 14px 6px 0px 6px;
@@ -37,7 +40,7 @@ button{
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--color1__dark-header-footer);
   height: 75px;
 }
 
@@ -53,12 +56,10 @@ button{
 }
 
 .topnav a:hover {
-  background-color: #ddd;
   color: black;
 }
 
 .topnav a.active {
-  background-color: var(--logoWood);
   color: white;
 }
 
