@@ -1,4 +1,4 @@
- :root{
+:root{
     --ash: rgb(239, 239, 244); 
     --darkGray: rgb(76, 77, 75);
     --logoWood: rgb(162, 137, 89);
@@ -7,25 +7,30 @@
     --infieldGreen: rgb(52, 147, 28);
     --tigersNavy: rgb(7, 23, 53);
 }
+
+html {
+  font-family: sans-serif; 
+  line-height: 1.15; 
+}
+
+body {
+  margin: 0; 
+  text-align: left;
+}
+
 button{
     margin-left:3rem
 }
 
-.title__hoegarden{
-    text-shadow:1px 1px 2px yellow,0 0 3px white ,0 0 55px yellow;
-    font-family:monospace;
-    color:red;
-    float: right;
-    font-weight:500;
-}
+
 .title__skinny{
   padding: 14px 6px 0px 6px;
   margin: 14px 6px 0px 6px;
 
-    font-weight:100;
-    font-size:.8rem;
-    text-indent:2.5rem;
-    line-height:2.6rem;
+    font-weight: 100;
+    font-size: .8rem;
+    text-indent: 2.5rem;
+    line-height: 2.6rem;
     color: white;
     float: left;
 }
@@ -40,9 +45,9 @@ button{
   float: right;
   color: #f2f2f2;
   text-align: center;
-  padding: auto 6px auto 6px;
+  padding: 0 6px 0 6px;
   margin: auto 6px auto 6px;
-    text-decoration: none;
+  text-decoration: none;
   font-size: 17px;
   height: 100%;
 }
@@ -93,7 +98,7 @@ button{
 .article-button {
     width:  2.6rem;
     height:  2.6rem;
-    border: 0.1rem transparent #0b0;
+    /*border: 0.1rem transparent #0b0;*/
     padding: 0.3rem;
     margin: 0.1rem;
     text-align: center;
