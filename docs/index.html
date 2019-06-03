@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Where Science is Written About | Zanthum Magazine</title>
+    <meta charset="utf-8">
 	<link type="text/css" href="./src.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
@@ -21,7 +22,7 @@
 </div>
 <div class="col-md-9 curvy-div curvy-div__dark-border">
     <p class="article-subject">evolution</p>
-    <div class="article-button"><a class="fas fa-info-circle" href="http://example.com"></a></div>
+    <div class="article-button" id="button-info1"><i class="fas fa-info-circle" ></i></div>
     <div class="article-button"><a class="fas fa-cut" href="http://example.com"></a></div>
     <div class="article-button"><a class="far fa-images" href="http://example.com"></a></div>
     <div class="article-button"><a class="fas fa-calculator" href="http://example.com"></a></div>
@@ -31,7 +32,7 @@
 </div>
 <div class="col-md-9 curvy-div curvy-div__light-border">
     <p class="article-subject">evolution</p>
-    <div class="article-button"><a class="fas fa-info-circle" href="http://example.com"></a></div>
+    <div class="article-button" id="button-info2"><i class="fas fa-info-circle" ></i></div>
     <div class="article-button"><a class="fas fa-cut" href="http://example.com"></a></div>
     <div class="article-button"><a class="far fa-images" href="http://example.com"></a></div>
     <div class="article-button"><a class="fas fa-calculator" href="http://example.com"></a></div>
@@ -60,7 +61,12 @@
 <style type="text/css">
 
 </style>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script type="text/javascript">
+    let elInfo001 = document.getElementById("button-info1");
+    elInfo001.onclick = alert('wow');
+    console.log('Last line.');
+</script>
 </body>
 </html>
