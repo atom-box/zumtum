@@ -63,7 +63,8 @@
 </style>
 <script type="text/javascript">
      let elInfo001 = document.getElementById("button-info1"); 
-    elInfo001.onclick = function(){alert(`Wow`);}
+    elInfo001.onclick = function(){alert(`Wow`);};
+    elInfo001.addEventListener('mouseover', function(){console.log('mousever')});
     console.log('Last line.');
 </script>
 </body>
