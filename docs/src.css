@@ -108,6 +108,10 @@ button{
     float: left ;
 }
 
+.article-button:hover {
+ background-color: #ddd;
+}
+
 .block{
     background-color:var(--lightGray);
     margin:1rem;
