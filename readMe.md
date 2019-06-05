@@ -1,12 +1,14 @@
 # Zunthum Magazine
 
 ## What's going on here
-I'm building a fake magazine site.  This should allow for lots of ways to 
+I'm building a [fake magazine site](https://atom-box.github.io/quanta/).  
+<br>This should allow for lots of ways to 
 integrate syntax that I'm trying out: ES5/6 functional **JS**, 
 better **HTML** descriptors, and **CSS**. Once I add 
 **MongoDB** it will 
 be a fullstack and I can re-deploy it on my D.O. server instead of 
 Github as a static page.  
+Deadline: CSS/HTML sorted out by June 14. Actual node server to MongoDB by June 25.
 ## Workflow
 * Write normal HTML/CSS in the DOCS directory.  Keep a folder of images 
 there too. 
