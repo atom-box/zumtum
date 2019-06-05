@@ -25,7 +25,17 @@ button{
     margin-left:3rem
 }
 
-
+aside {
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.9rem;
+    border-width: 0.8rem;
+    border-style: dashed;
+    margin: 0.5rem 2rem;
+    color:  #bbb ;
+    padding: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+}
 
 .title__skinny{
 /*  padding: 14px 6px 0px 6px;
