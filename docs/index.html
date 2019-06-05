@@ -103,12 +103,14 @@
         /*
         make a mnemonic: five steps: create el, create child, append child , into a var get element, append child again
         */
-        let wikDiv = document.createElement("aside");
-        let wikTxt = document.createTextNode("Evolution is change in the heritable characteristics of biological populations over successive generations.");
-        wikDiv.appendChild(wikTxt);
-        let roofEl = document.getElementById("article001");
-        roofEl.appendChild(wikDiv);
-
+        function asidifier(){
+            let wikDiv = document.createElement("aside");
+            let wikTxt = document.createTextNode("Evolution is change in the heritable characteristics of biological populations over successive generations.");
+            wikDiv.appendChild(wikTxt);
+            let roofEl = document.getElementById("article001");
+            roofEl.insertAdjacentElement("afterend", wikDiv);
+        }
+asidifier();
 
     </script>
 </body>
