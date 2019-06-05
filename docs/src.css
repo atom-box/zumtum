@@ -22,13 +22,11 @@ button{
     margin-left:3rem
 }
 
-footer {
-  background-color: var(--color1__dark-header-footer);
-}
+
 
 .title__skinny{
-  padding: 14px 6px 0px 6px;
-  margin: 14px 6px 0px 6px;
+/*  padding: 14px 6px 0px 6px;
+  margin: 14px 6px 0px 6px;*/
 
     font-weight: 100;
     font-size: .8rem;
@@ -40,7 +38,8 @@ footer {
 
 .topnav {
   overflow: hidden;
-  background-color: var(--color1__dark-header-footer);
+    background-color:var(--tigersNavy);
+    color:white;
   height: 75px;
 }
 
@@ -111,7 +110,7 @@ footer {
     margin:1rem;
     padding:2rem
 }
-.navyBackground{
+.navyBackground {
     background-color:var(--tigersNavy);
     color:white;
     padding:.1rem .3rem
