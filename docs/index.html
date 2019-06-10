@@ -5,7 +5,7 @@
     <title>Clear Science | Zanthum Magazine</title>
     <meta charset="utf-8">
     <link type="text/css" href="./src.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -76,6 +76,26 @@
         <p>By Shannon Hall</p>
         <p>Astronomers will soon take their first glance at the atmosphere of a distant exoplanet. Sarah Hörst is writing the guidebook for these exoplanetary explorers, one that will reveal what a distinctive atmosphere says about the world underneath.</p>
     </div>
+
+    <div class="col-md-9 curvy-div curvy-div__dark-border" id="article004">
+        <p class="article-button " onmouseover="asidifier()" >evolution</p>
+        <div class="article-button" id="button-info1"><i class="fas fa-info-circle"></i></div>
+        <div class="article-button">
+            <a class="fas fa-cut" onclick="clipArticle()" ></a>
+            <!-- note purple css dissappears if href deleted -->
+        </div>
+        <div class="article-button">
+            <a class="far fa-images" href="http://example.com"></a>
+        </div>
+        <div class="article-button">
+            <a class="fas fa-calculator" href="http://example.com"></a>
+        </div>
+        <h2 class="article-title">Icefish Study Adds Another Color to the Story of Blood</h2>
+        <p>By John Rennie</p>
+        <p>The rainbow of pigments that animals use for blood illustrates a central truth of evolution.</p>
+    </div>
+
+
     <footer class="navyBackground">
         <h2 id="footer__logo">Quanta</h2>
         <p>Want to Join Us?</p>
@@ -84,33 +104,9 @@
         <p>Devnotes: the float left of the navbar worked.</p>
         <p class="greentext">All Rights Reserved © 2019</p>
     </footer>
-    <style type="text/css">
-    </style>
-    <script type="text/javascript">
-        function clipArticle(){
-            alert("TODO: 1) once articles are served from the static pseudo db 2) make a function to send to the system's clipboard");
-        }
+    <!-- <script type="text/javascript" src="./data/testVars.js"  ></script> -->
+    <script type="module" src="./logic/top.js">
 
-        // 001 CHANGER
-        let elInfo001 = document.getElementById("footer__logo");
-        elInfo001.innerHTML = "starch";
-        elInfo001.style.color = "yellow";
-        console.log('Last line.');
-
-        //002 ONCLICK ONMOUSEOVER in the HTML itself
-
-        //003 APPEND
-        /*
-        make a mnemonic: five steps: create el, create child, append child , into a var get element, append child again
-        */
-        function asidifier(){
-            let wikDiv = document.createElement("aside");
-            let wikTxt = document.createTextNode("Evolution is change in the heritable characteristics of biological populations over successive generations.");
-            wikDiv.appendChild(wikTxt);
-            let roofEl = document.getElementById("article001");
-            roofEl.insertAdjacentElement("afterend", wikDiv);
-        }
-// asidifier();
 
     </script>
 </body>
