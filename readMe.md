@@ -22,7 +22,9 @@ Deadline: CSS/HTML sorted out by June 14. Actual node server to MongoDB by June 
 * Write a one route server that delivers a single line of minifed HTML.
 ## To Do's
 * when mouseover loses focus, vanish the <aside>
-* rough the div to hold all of the below functionality. 
+* write a JS that inserts a 4th div to load from JSON the existing format article
+* convert the whole page to those
+* rough a 5th div to hold all of the below functionality. 
 * back off from that rough and deploy just with whichever buttons are working now
 * make a second page that can display all of the asides 
 * re-order the articles when up or down are pressed
