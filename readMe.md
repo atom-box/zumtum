@@ -20,5 +20,15 @@ Deadline: CSS/HTML sorted out by June 14. Actual node server to MongoDB by June 
 * Add a switch statement to capture LENGTH of the route.
 * Make a two div route viewer.
 * Write a one route server that delivers a single line of minifed HTML.
+## To Do's
+* when mouseover loses focus, vanish the <aside>
+* rough the div to hold all of the below functionality. 
+* back off from that rough and deploy just with whichever buttons are working now
+* make a second page that can display all of the asides 
+* re-order the articles when up or down are pressed
+* banish the article when right arrow is pressed
+* send the article to a third page when left-arrow is pressed
+* summon a live wiki shorty into an aside during category name mouseover
+* summon a live wikipedia longy and parse into formatted aside 
 ## Most Valuable Player
 ![OReilly Book Cover](https://github.com/atom-box/quanta/blob/master/oreilly.jpg)
