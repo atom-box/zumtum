@@ -1,10 +1,5 @@
-export {z, y, x};
-var x = 5.4321;
-var y =  [ 'border', 'dodgerBlue',
-'subject',   'evolution',
-'title', 'Icefish Study Adds Another Color to the Story of Blood',
-'author','John Rennie',
-'content', 'The rainbow of pigments that animals use for blood illustrates a central truth of evolution.'];
+export {z};
+
 var z = JSON.stringify(
 
 [{'border': 'dodgerBlue',

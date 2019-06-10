@@ -26,7 +26,9 @@
             roofEl.insertAdjacentElement("afterend", wikDiv);
         }
 
-        //004 Read in your data.  
+        //004 Display articles from the JSON
+        let articles = JSON.parse(z);
+        console.log(articles[1].author); 
 
 
 
