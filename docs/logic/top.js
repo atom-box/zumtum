@@ -33,13 +33,11 @@
         let articles = JSON.parse(z);
         console.log(articles[1].author); 
         
-        // if no argument supplied, show all
-        function showArticles(n){
-            // parameters: n is an id
-            let html = '';
-            let dummyToDo = articles.length;
-            html += ` 
-    <p class="article-subject">${articles[0].topic}</p>
+function stringToHTML(o){
+    // takes one OBJECT
+    // returns a string of HTML
+         let oneArticle = ` 
+    <p class="article-subject">${o.topic}</p>
     <div class="article-button">
       <a class="fas fa-info-circle" href="http://example.com"></a>
     </div>
@@ -52,10 +50,24 @@
     <div class="article-button">
       <a class="fas fa-calculator" href="http://example.com"></a>
     </div>
-    <h2 class="article-title">${articles[0].title}</h2>
-    <p>${articles[0].author} </p>
-    <p>${articles[0].content}</p>
+    <h2 class="article-title">${o.title}</h2>
+    <p>${o.author} </p>
+    <p>${o.content}</p>
  `;
+    return oneArticle;
+}
+
+
+
+
+        // if no argument supplied, show all
+        function showArticles(n){
+            // parameters: n is an id
+            let artsCount = articles.length;
+            let html = '';
+            html += stringToHTML(articles[0]);
+        
+   
             let elArts = document.getElementById(n).innerHTML = html;
             console.log('yay');
         }
