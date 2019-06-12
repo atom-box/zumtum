@@ -6,6 +6,9 @@ I'm building a [fake magazine site](https://atom-box.github.io/quanta/).
 integrate syntax that I'm trying out: ES5/6 functional **JS**, 
 better **HTML** descriptors, **CSS**, **MongoDB** 
 Deadline: CSS/HTML sorted out by June 14. Actual node server to MongoDB by June 25.
+## Filesystem
+Source & Docs, where docs is really BUILD.  This makes it easier to 
+serve up the results straight from the Git remote.
 ## Changelog
 * Move existing four articles' contents to flat file of JSON
 * Make an <aside> element appear when you mouseover the category 
