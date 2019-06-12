@@ -57,20 +57,22 @@ function stringToHTML(o){
     return oneArticle;
 }
 
+function showArticles(i){
+    let html = articles.reduce(function(x,y){ return stringToHTML(x) + stringToHTML(y)} );
+    document.getElementById(i).innerHTML = html;
+}
 
 
-
-        // if no argument supplied, show all
-        function showArticles(n){
-            // parameters: n is an id
-            let artsCount = articles.length;
-            let html = '';
-            html += stringToHTML(articles[0]);
+        // // if no argument supplied, show all
+        // l
+        //     // parameters: n is an id
+        //     let artsCount = articles.length;
+        //     let html = '';
+        //     html += stringToHTML(articles[0]);
         
-   
-            let elArts = document.getElementById(n).innerHTML = html;
-            console.log('yay');
-        }
+
+        //     console.log('yay');
+        // }
 // ROBOTICALLY
 // BRING OVER theHTML AND THE OBJECT PROPERTIES FROM THE ARRAY.
 // FINISH OFF BY innerHTML into the ELEMENT list-of-articles.
