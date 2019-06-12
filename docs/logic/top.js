@@ -37,8 +37,9 @@
         function showArticles(n){
             // parameters: n is an id
             let html = '';
+            let dummyToDo = articles.length;
             html += ` 
-    <p class="article-subject">TOPIC****</p>
+    <p class="article-subject">${articles[0].topic}</p>
     <div class="article-button">
       <a class="fas fa-info-circle" href="http://example.com"></a>
     </div>
@@ -51,14 +52,13 @@
     <div class="article-button">
       <a class="fas fa-calculator" href="http://example.com"></a>
     </div>
-    <h2 class="article-title">TITLE****</h2>
-    <p>AUTHOR****</p>
-    <p>BODY****</p>
+    <h2 class="article-title">${articles[0].title}</h2>
+    <p>${articles[0].author} </p>
+    <p>${articles[0].content}</p>
  `;
             let elArts = document.getElementById(n).innerHTML = html;
             console.log('yay');
         }
-
 // ROBOTICALLY
 // BRING OVER theHTML AND THE OBJECT PROPERTIES FROM THE ARRAY.
 // FINISH OFF BY innerHTML into the ELEMENT list-of-articles.
