@@ -6,6 +6,9 @@
             alert("TODO: 1) once articles are served from the static pseudo db 2) make a function to send to the system's clipboard");
         }
 
+
+
+
         // 001 CHANGER
         let elInfo001 = document.getElementById("footer__logo");
         elInfo001.innerHTML = "starch";
@@ -29,8 +32,37 @@
         //004 Display articles from the JSON
         let articles = JSON.parse(z);
         console.log(articles[1].author); 
+        
+        // if no argument supplied, show all
+        function showArticles(n){
+            // parameters: n is an id
+            let html = '';
+            html += ` 
+    <p class="article-subject">TOPIC****</p>
+    <div class="article-button">
+      <a class="fas fa-info-circle" href="http://example.com"></a>
+    </div>
+    <div class="article-button">
+      <a class="fas fa-cut" href="http://example.com"></a>
+    </div>
+    <div class="article-button">
+      <a class="far fa-images" href="http://example.com"></a>
+    </div>
+    <div class="article-button">
+      <a class="fas fa-calculator" href="http://example.com"></a>
+    </div>
+    <h2 class="article-title">TITLE****</h2>
+    <p>AUTHOR****</p>
+    <p>BODY****</p>
+ `;
+            let elArts = document.getElementById(n).innerHTML = html;
+            console.log('yay');
+        }
+
+// ROBOTICALLY
+// BRING OVER theHTML AND THE OBJECT PROPERTIES FROM THE ARRAY.
+// FINISH OFF BY innerHTML into the ELEMENT list-of-articles.
 
 
-
-
+showArticles('insert001');
 // asidifier();
