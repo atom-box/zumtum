@@ -64,16 +64,19 @@ function showArticles(i, a){
 // Accepts an array of ARTICLE OBJECTS (a).
 // Accepts a string for ID (i).
 // Returns nothing; modifies the DOM.
-
-
-
     let html = articles.reduce(function(accum, curr){
         return `${accum}` + tossInSomeTags(curr);}  , '<h1>Begin</h1>');
     document.getElementById(i).innerHTML = html;
 }
 
+function addArticle(){
+    let submission = document.getElementById('newArticle').value;
+    let now = new Date();
+    console.log( now.getSeconds() +  '  ' + submission );
+}
 
 
-
+ 
+document.getElementById('submit').addEventListener('click', addArticle);
 showArticles('insert001', articles);
 // asidifier();
