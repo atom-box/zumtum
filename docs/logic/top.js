@@ -1,6 +1,7 @@
         import {z} from './articles.js';
-
         console.log(z[7]);
+        let articles = JSON.parse(z);
+        console.log(articles[1].author); 
 
         function clipArticle(){
             alert("TODO: 1) once articles are served from the static pseudo db 2) make a function to send to the system's clipboard");
@@ -30,13 +31,13 @@
         }
 
         //004 Display articles from the JSON
-        let articles = JSON.parse(z);
-        console.log(articles[1].author); 
         
-function stringToHTML(o){
+function tossInSomeTags(o){
     // takes one OBJECT
     // returns a string of HTML
          let oneArticle = ` 
+  <div class="col-md-9 curvy-div ${o.css__border}" id="article001">
+
     <p class="article-subject">${o.topic}</p>
     <div class="article-button">
       <a class="fas fa-info-circle" href="http://example.com"></a>
@@ -53,30 +54,27 @@ function stringToHTML(o){
     <h2 class="article-title">${o.title}</h2>
     <p>${o.author} </p>
     <p>${o.content}</p>
+    </div>
  `;
     return oneArticle;
 }
 
-function showArticles(i){
-    let html = articles.reduce(function(x,y){ return stringToHTML(x) + stringToHTML(y)} );
+
+
+function showArticles(i, a){
+// Accepts an array of ARTICLE OBJECTS (a).
+// Accepts a string for ID (i).
+// Returns nothing; modifies the DOM.
+
+
+
+    let html = articles.reduce(function(accum, curr){
+        return `${accum}` + tossInSomeTags(curr);}  , '<h1>Begin</h1>');
     document.getElementById(i).innerHTML = html;
 }
 
 
-        // // if no argument supplied, show all
-        // l
-        //     // parameters: n is an id
-        //     let artsCount = articles.length;
-        //     let html = '';
-        //     html += stringToHTML(articles[0]);
-        
-
-        //     console.log('yay');
-        // }
-// ROBOTICALLY
-// BRING OVER theHTML AND THE OBJECT PROPERTIES FROM THE ARRAY.
-// FINISH OFF BY innerHTML into the ELEMENT list-of-articles.
 
 
-showArticles('insert001');
+showArticles('insert001', articles);
 // asidifier();
