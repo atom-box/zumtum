@@ -122,6 +122,7 @@ aside {
 
 .article-button:hover {
  background-color: #ddd;
+  text-decoration: none;
 }
 
 .block{

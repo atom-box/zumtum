@@ -40,25 +40,24 @@ function tossInSomeTags(o){
 
     <p class="article-subject">${o.topic}</p>
     <div class="article-button">
-      <a class="fas fa-info-circle" href="http://example.com"></a>
+      <i class="far fa-hand-point-left" href="http://example.com"></i>
     </div>
     <div class="article-button">
-      <a class="fas fa-cut" href="http://example.com"></a>
+      <i class="far fa-hand-point-up" href="http://example.com"></i>
     </div>
     <div class="article-button">
-      <a class="far fa-images" href="http://example.com"></a>
+      <i class="far fa-hand-point-down" href="http://example.com"></i>
     </div>
     <div class="article-button">
-      <a class="fas fa-calculator" href="http://example.com"></a>
+      <i class="far fa-hand-point-right"  href="http://example.com" ></i>
     </div>
     <h2 class="article-title">${o.title}</h2>
-    <p>${o.author} </p>
+    <p>By ${o.author} </p>
     <p>${o.content}</p>
     </div>
  `;
     return oneArticle;
 }
-
 
 
 function showArticles(i, a){
