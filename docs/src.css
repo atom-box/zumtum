@@ -149,3 +149,8 @@ aside {
   height: 75px;
 
 }
+
+#newArticle {
+  min-height: 4rem;
+  min-width: 34rem;
+}
