@@ -1,10 +1,12 @@
+/******* MODEL  *******/
 import {z} from './articles.js';
 
 function getArticles(){
-    let articles = JSON.parse(z);
-    console.log(articles[1].author); 
-    return articles;
+    return Z;
 }
+
+// GLOBAL
+let articles = getArticles();
 
 
 
@@ -24,7 +26,7 @@ console.log('Last line.');
 
 
 
-//003 APPEND
+//003 DIV APPEND
 /*
 make a mnemonic: five steps: create el, create child, append child , into a var get element, append child again
 */
@@ -38,7 +40,7 @@ function asidifier(){
 
         //004 Display articles from the JSON
         
-function tossInSomeTags(o){
+function interleaveSomeTags(o){
     // takes one OBJECT
     // returns a string of HTML
          let oneArticle = ` 
@@ -70,15 +72,27 @@ function showArticles(i, a){
 // Accepts an array of ARTICLE OBJECTS (a).
 // Accepts a string for ID (i).
 // Returns nothing; modifies the DOM.
+    let articles = getArticles();
     let html = articles.reduce(function(accum, curr){
-        return `${accum}` + tossInSomeTags(curr);}  , '<h1>Begin</h1>');
+        return `${accum}` + interleaveSomeTags(curr);}  , '<h1>Begin</h1>');
     document.getElementById(i).innerHTML = html;
 }
 
 function addArticle(){  /*************************************************/
+    let articles = getArticles();
     let submission = document.getElementById('newArticle').value;
     let now = new Date();
     console.log( now.getSeconds() +  '  ' + submission );
+    let newArticleObject = {
+        'id': '0000',
+        'css__border': 'curvy-div__darker-border',
+        'topic':   'sanctuary',
+        'title': submission.slice(3,6),
+        'author': 'You',
+        'content': submission}     
+    };
+    let articleNouveau = interleaveSomeTags(newArticleObject);
+
 
 }
 
