@@ -1,0 +1,16 @@
+{
+  "name": "zunthum",
+  "version": "1.0.0",
+  "description": "",
+  "entry point": "meadowlark.js",
+  "entry-point": "meadowlark.js",
+  "main": "zunthum.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@mistergenest",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
