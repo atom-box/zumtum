@@ -28,3 +28,11 @@ What subject(s) will you study with Zunthum?
 ### What is zunthum?
 Zunthum is free.  I built it for myself.  You are welcome & encouraged to use it. <br>Start by taking something you would like to memorize, like notes, or an article.  Zunthum will guide you in turning it into a series of questions that summarize the main points.  It will then ask you to synthesize a paragraph that answers your series of questions.  <br> This method of studying is called 'Cornell Notes' since it was promoted by a professor at Cornell College going all the way back to the 1940s. Today it is promoted by AVID Schools, a network of over 700 public & private schools based in Sandy Ego, California.  This technique is not an orthodoxy but rather just a trick to get you to view a set of ideas in a layered, structured, timed way.  By giving you a simple set of steps it helps you relax and enjoy learning.  
 
+<br> 
+
+            1. This method of studying is called 'Cornell Notes' since it was promoted by a professor at Cornell College going all the way back to the 1940s. 
+        2. Today this method of studying is promoted by AVID Schools, a network of over 700 public & private schools based in Sandy Ego, California.  
+    3. This technique is not an orthodoxy but rather just a trick to get you to view a set of ideas in a layered, structured, timed way.  
+4. By giving you a simple set of steps it helps you relax and enjoy learning.  
+5.  This is suitable for processing chalk talk and conference talks.
+6.  This can prevent you from reading as forgettable entertainment and instead retaining the articles you have read.
