@@ -6,7 +6,9 @@ let app = express();
 let handlebars = require('express-handlebars').create({defaultLayout:'main'});
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
+app.use(express.static(__dirname + '/assets')); 
 
+// WORKS AFTER I PUT INTO TEMPLATE {{{BODY}}}
 app.get('/', function(req, res){
 	res.render('test'); // TODO
 });
