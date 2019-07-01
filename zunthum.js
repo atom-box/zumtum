@@ -1,22 +1,34 @@
 "use strict"
+const PORT = 2001;
 
 let express = require('express');
 let app = express();
-
-const PORT = 2001;
+let handlebars = require('express-handlebars').create({defaultLayout:'main'});
+app.engine('handlebars', handlebars.engine);
+app.set('view engine', 'handlebars');
 
 app.get('/', function(req, res){
-	res.render('home');
+	res.render('test'); // TODO
 });
+
+// WORKS.
+app.get('/nohandlebars', function(req, res){
+	res.type('text/plain');
+	res.status(456);
+	var now = new Date();
+	res.send(`You are special. ${now} And life is short.`);
+}  )
 
 app.get('/signin', function(req, res){
 	res.render('signin')
 });
 
+// THIS RENDERS THE TEMPLATE ONLY
 app.get('/stepA', function(req, res){
 	res.render('stepA');
 });
 
+// THIS GIVES 404 ERROR -- SLASH IS REQUIRED
 app.get('/stepB', function(req, res){
 	res.render('stepB');
 });
