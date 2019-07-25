@@ -12,3 +12,25 @@ Actual node server to MongoDB by June 25.
 ## Most Valuable Player
 [OReilly Web Development with 
 Node.js](https://www.goodreads.com/book/show/21510195-web-development-with-node-and-express)
+
+# Going to need by lunchtime today:
+
+## Screen 2
+
+* BOX FOR TEXT IN
+
+* SCROLLING TO INFINITY:  input + their-parsed-paragraph
+
+## Screen 3
+
+* Scrolling on the left, their Qs they wrote
+* Sitting on the right biggish box - 
+
+## After lunch
+* Applying for jobs and opensource
+
+## After today
+* Store the data
+* Set up a username and password
+* Pipe in APIs from SciURLs
+
