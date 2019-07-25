@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Step 1 | Zumtum </title>
     <!-- Meta -->
@@ -27,62 +28,87 @@
 
 <body data-spy="scroll">
 
-
     <!-- ******MAIN****** -->
     <section id="promo" class="">
         <div class=" text-center">
             <h1 class="title">zum<span class="promo highlight">tum</span></h1>
- 
+
             <ul class="meta list-inline">
                 <li class="list-inline-item"><a href="index.html" target="_blank">Home</a></li>
-                <li class="list-inline-item"><p style="color: #b4ca65" onclick="press()" id="localInstructions" target="_blank">Instructions</p></li>
+                <li class="list-inline-item">
+                    <p style="color: #b4ca65" onclick="press()" id="localInstructions" target="_blank">Instructions</p>
+                </li>
                 <li class="list-inline-item"><a href="screen3.html" target="_blank">Next</a></li>
             </ul>
             <div id="instructions-place"></div>
             <!--//meta -->
-
-<div>
-
-
         </div>
-        <!--//container-->
 
-    </section><!--//promo-->
-    
+        <div class="container"> 
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">The text you want to read</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea" placeholder="Paste your text here"></textarea>
+            </div>
+            
+            <div class="row">
+            <div class="input-group mb-3 col-5 offset-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Your text</option>
+                    <option value="2">Ipsum Lorum</option>
+                    <option value="3">Eisenhower</option>
+                </select>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="input-group mb-3 col-5 offset-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01"><i class="far fa-file-image"></i></span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                </div>
+            </div>
+            </div>
+        </div>        <!-- end container -->
+
+    </section>
+    <!--//promo-->
 
 
-
-
-    <!-- ******FOOTER****** --> 
+    <!-- ******FOOTER****** -->
     <footer class="footer ">
- 
+
         <div class="container text-center ">
             <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
             <small class="copyright ">App designed by <a href="http:littlefurnace.com" target="_blank ">Evan Genest</a> at Little Furnace.<br>Bootstrap Template designed by <a href="https://themes.3rdwavemedia.com " target="_blank ">Xiaoying Riley</a> at 3rdWaveMedia.</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
-              
-     
-    <!-- Javascript -->          
-    <script type="text/javascript " src="assets/plugins/jquery-3.3.1.min.js "></script>   
-    <script type="text/javascript " src="assets/plugins/jquery.easing.1.3.js "></script>   
-    <script type="text/javascript " src="assets/plugins/bootstrap/js/bootstrap.min.js "></script>     
-    <script type="text/javascript " src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js "></script> 
-    <script type="text/javascript " src="assets/plugins/prism/prism.js "></script>    
-    <script type="text/javascript " src="assets/js/main.js "></script>  
+        </div>
+        <!--//container-->
+    </footer>
+    <!--//footer-->
+
+
+    <!-- Javascript -->
+    <script type="text/javascript " src="assets/plugins/jquery-3.3.1.min.js "></script>
+    <script type="text/javascript " src="assets/plugins/jquery.easing.1.3.js "></script>
+    <script type="text/javascript " src="assets/plugins/bootstrap/js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js "></script>
+    <script type="text/javascript " src="assets/plugins/prism/prism.js "></script>
+    <script type="text/javascript " src="assets/js/main.js "></script>
     <script type="text/javascript">
-        console.log("Gonna grab the button to listen now.") 
         var el1 = document.getElementById('instructions-place');
-        function toggleLocalInstructions(){
-            console.log("RTFM.  Thank you.");
+    
+        function press(){
+            el1.innerHTML = "Lather, Rinse, Repeat";
         }
-        // el1.addEventListener("click", toggleLocalInstructions(), false);
-
-    function press(){
-
- el1.innerHTML = "Lather, Rinse, Repeat";
-    }
     </script>
-        
+
 </body>
+
 </html>
