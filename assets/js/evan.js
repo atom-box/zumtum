@@ -5,6 +5,10 @@
             el1.innerHTML = "Lather, Rinse, Repeat";
         }
 
+function watson(){
+	console.log('Watson.');
+}
+
 /**      D A T A B A S E todo! go to SQL   **/
 
 // Array of 
