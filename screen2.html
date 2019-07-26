@@ -30,13 +30,14 @@
 
     <!-- ******MAIN****** -->
     <section id="promo" class="">
+
         <div class=" text-center">
             <h1 class="title">zum<span class="promo highlight">tum</span></h1>
 
             <ul class="meta list-inline">
-                <li class="list-inline-item"><a href="index.html" target="_blank">Home</a></li>
+                <li class="list-inline-item"><a href="index.html" target="_blank">Home  </a></li>
                 <li class="list-inline-item">
-                    <p style="color: #b4ca65" onclick="press()" id="localInstructions" target="_blank">Instructions</p>
+                    <p style="color: #b4ca65" onclick="press()" id="localInstructions" target="_blank">Instructions </p>
                 </li>
                 <li class="list-inline-item"><a href="screen3.html" target="_blank">Next</a></li>
             </ul>
@@ -44,39 +45,44 @@
             <!--//meta -->
         </div>
 
-        <div class="container"> 
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">The text you want to read</span>
-                </div>
-                <textarea class="form-control" aria-label="With textarea" placeholder="Paste your text here"></textarea>
+        <div class="container">
+
+
+            <!-- PASTE IN YOUR READING MATERIAL -->
+            <label for="inputPassword">
+                <large> I want to read this</large>
+            </label>
+            <textarea class="form-control" rows="13" aria-label="With textarea" placeholder="Paste your text here"></textarea>
+
+            <!-- SELECT INPUT SOURCE -->
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">User text</label>
             </div>
-            
-            <div class="row">
-            <div class="input-group mb-3 col-5 offset-3">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Options</label>
-                </div>
-                <select class="custom-select" id="inputGroupSelect01">
-                    <option selected>Your text</option>
-                    <option value="2">Ipsum Lorum</option>
-                    <option value="3">Eisenhower</option>
-                </select>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Watson & Crick</label>
             </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">Eisenhower</label>
             </div>
 
+
+
+
+            <!-- FILE BROWSE -->
             <div class="row">
-            <div class="input-group mb-3 col-5 offset-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroupFileAddon01"><i class="far fa-file-image"></i></span>
-                </div>
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                <div class="input-group mb-3 col-4 offset-4">
+
+                    <div class="custom-file">
+                        <label class="custom-file-label" for="inputGroupFile01"><i>optional</i></label>
+                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                    </div>
                 </div>
             </div>
-            </div>
-        </div>        <!-- end container -->
+        </div>
+        <!-- end container -->
 
     </section>
     <!--//promo-->
@@ -101,12 +107,9 @@
     <script type="text/javascript " src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js "></script>
     <script type="text/javascript " src="assets/plugins/prism/prism.js "></script>
     <script type="text/javascript " src="assets/js/main.js "></script>
+    <script type="text/javascript " src="assets/js/evan.js "></script>
     <script type="text/javascript">
-        var el1 = document.getElementById('instructions-place');
-    
-        function press(){
-            el1.innerHTML = "Lather, Rinse, Repeat";
-        }
+        //////// //// // / // //
     </script>
 
 </body>
