@@ -28,7 +28,9 @@
 
 <body data-spy="scroll">
 
-    <!-- ******MAIN****** -->
+<!-- |  |  |  |   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |-->
+<!-- START NAVBAR -->
+
     <header>
 
         <div class=" text-center">
@@ -39,13 +41,35 @@
                 <li class="list-inline-item">
                     <p style="color: #b4ca65" onclick="press()" id="localInstructions" target="_blank">Instructions </p>
                 </li>
-                <li class="list-inline-item"><a href="screen3.html" target="_blank">Next</a></li>
+                <li class="list-inline-item"><a href="screen3.html" target="_blank">Swag</a></li>
             </ul>
             <div id="instructions-place"></div>
             <!--//meta -->
         </div>
     </header>
-    <section>
+
+<!-- |  |  |  |   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |-->
+<!-- START NAVIGATION TABS -->
+
+<ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#duck" role="tab" aria-controls="duck" aria-selected="true">Duck</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#chicken" role="tab" aria-controls="chicken" aria-selected="false">Chicken</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#kiwi" role="tab" aria-controls="kiwi" aria-selected="false">Kiwi</a>
+  </li>
+</ul>
+ 
+
+ <!-- |  |  |  |   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |-->
+ <!-- START THREE CONTENT SECTIONS -->
+<div class="tab-content mt-3">
+  <div class="tab-pane active" id="duck" role="tabpanel" aria-labelledby="duck-tab">
+    <section>     <!-- 111    111    111    111    111    111    -->
+    <!-- SECTION ONE -->
         <div class="container text-center">
 
 
@@ -71,8 +95,6 @@
                 <label class="custom-control-label" for="customRadioInline4">Upload pdf</label>
             </div>
 
-
-
             <!-- FILE BROWSE -->
             <div class="row invisible" id="pdfButton" attic="visible">
                 <div class="input-group mb-3 col-4 offset-4">
@@ -83,10 +105,29 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <!-- end container -->
 
-    </section>
+    </section>             
+  </div>
+  <div class="tab-pane" id="chicken" role="tabpanel" aria-labelledby="chicken-tab">
+      <h2>Great things.</h2>
+  </div>
+  <div class="tab-pane" id="kiwi" role="tabpanel" aria-labelledby="kiwi-tab">
+      <h2>Even better.</h2>
+      
+  </div>
+  <div class="tab-pane" id="emu" role="tabpanel" aria-labelledby="emu-tab">
+    Cruft           
+  </div>
+</div>
+
+
+
+
+
+
 
 
 
