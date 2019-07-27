@@ -45,6 +45,17 @@ function visifyBrowser(){
     console.log(`Attic now has ${el3.getAttribute('attic')}`);
 }
 
+/**      P A R S E    to step2      **/
+function parse(){
+    console.log(`button to step 2 was pressed at ${new Date()}`);
+}
+
+document.getElementById('go-to-step-two').addEventListener('click',  parse);
+
+
+
+
+
 /**      D A T A B A S E todo! go to SQL   **/
 
 // Array of 
