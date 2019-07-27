@@ -53,22 +53,22 @@
 
 <ul class="nav nav-tabs" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#duck" role="tab" aria-controls="duck" aria-selected="true">Duck</a>
+    <a class="nav-link active" data-toggle="tab" href="#tab-one" role="tab" aria-controls="tab-one" aria-selected="true">One</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#chicken" role="tab" aria-controls="chicken" aria-selected="false">Chicken</a>
+    <a class="nav-link" data-toggle="tab" href="#tab-two" role="tab" aria-controls="tab-two" aria-selected="false">Two</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#kiwi" role="tab" aria-controls="kiwi" aria-selected="false">Kiwi</a>
+    <a class="nav-link" data-toggle="tab" href="#tab-three" role="tab" aria-controls="tab-three" aria-selected="false">Three</a>
   </li>
 </ul>
  
 
  <!-- |  |  |  |   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |-->
- <!-- START THREE CONTENT SECTIONS -->
+
 <div class="tab-content mt-3">
-  <div class="tab-pane active" id="duck" role="tabpanel" aria-labelledby="duck-tab">
-    <section>     <!-- 111    111    111    111    111    111    -->
+  <article class="tab-pane active" id="tab-one" role="tabpanel" aria-labelledby="tab-one-tab">
+    <!-- 111    111    111    111    111    111    -->
     <!-- SECTION ONE -->
         <div class="container text-center">
 
@@ -106,22 +106,24 @@
                 </div>
             </div>
 
-        </div>
-        <!-- end container -->
+        </div>        <!-- end container -->
+  </article>        <!-- end tab-pane -->
 
-    </section>             
-  </div>
-  <div class="tab-pane" id="chicken" role="tabpanel" aria-labelledby="chicken-tab">
+
+    <!-- 222    222    222    222    222    222    -->
+    <!-- SECTION TWO -->
+  <article class="tab-pane" id="tab-two" role="tabpanel" aria-labelledby="tab-two-tab">
       <h2>Great things.</h2>
-  </div>
-  <div class="tab-pane" id="kiwi" role="tabpanel" aria-labelledby="kiwi-tab">
+  </article>
+
+      <!-- 333    333    333    333    333    333    -->
+    <!-- SECTION THREE -->
+  <article class="tab-pane" id="tab-three" role="tabpanel" aria-labelledby="tab-three-tab">
       <h2>Even better.</h2>
       
-  </div>
-  <div class="tab-pane" id="emu" role="tabpanel" aria-labelledby="emu-tab">
-    Cruft           
-  </div>
-</div>
+  </article>
+
+</div>        <!-- end triple-tabbed row -->
 
 
 
