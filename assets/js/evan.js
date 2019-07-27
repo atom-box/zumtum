@@ -1,16 +1,26 @@
-/**         TEST     **/
-el1 = document.getElementById('zone-of-input');
-el1.innerHTML = "zappos";
+/**         TESTs     **/
+/*
+   Zumtum  Copyright (C) 2019  Evan Genest
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+    A bunch more needs to be done still to the license.
+*/
 
 
-
-
-/**         INSTRUCTIONS TOGGLE     **/
+/**          TOGGLEs     **/
         var el1 = document.getElementById('instructions-place');
     
-        function press(){
+        function instructionsToggle(){
             el1.innerHTML = "Lather, Rinse, Repeat";
         }
+
+        function fileLoaderToggle(){
+            // Unhide.       Element should have a bootstrap explanation beneath and be grayed out by bootstrap.
+        }
+
+
 
 /**         RADIO BUTTONS     **/
 function watson(){
@@ -23,6 +33,14 @@ function eisenhower(){
 	inputZoneEl.innerHTML = eisenhowerString;
 }
 
+function visifyBrowser(){
+    let bTemp; // temp store while swapping classNames.
+    let el3 = document.getElementById('pdfButton');
+    bTemp = el3.className;
+    el3.className = el3.getAttribute('attic');
+    el3.setAttribute('attic', bTemp);
+    console.log(`Attic now has ${el3.getAttribute('attic')}`);
+}
 
 /**      D A T A B A S E todo! go to SQL   **/
 

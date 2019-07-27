@@ -29,7 +29,7 @@
 <body data-spy="scroll">
 
     <!-- ******MAIN****** -->
-    <section  class="">
+    <header>
 
         <div class=" text-center">
             <h1 class="title">zum<span class="promo highlight">tum</span></h1>
@@ -44,36 +44,37 @@
             <div id="instructions-place"></div>
             <!--//meta -->
         </div>
-    </section>
+    </header>
     <section>
-        <div class="container">
+        <div class="container text-center">
 
 
             <!-- PASTE IN YOUR READING MATERIAL -->
-            <label for="inputPassword">
-                <large> I want to read this</large>
-            </label>
-            <textarea class="form-control" rows="13" aria-label="With textarea" placeholder="Paste your text here"></textarea>
+            <textarea class="form-control" rows="13" aria-label="With textarea" placeholder="Paste your text here" id="zone-of-input"></textarea>
+
 
             <!-- SELECT INPUT SOURCE -->
             <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input" checked>
                 <label class="custom-control-label" for="customRadioInline1">User text</label>
             </div>
             <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline1">Watson & Crick</label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input" onchange="eisenhower()">
                 <label class="custom-control-label" for="customRadioInline2">Eisenhower</label>
             </div>
-
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline3" name="customRadioInline" class="custom-control-input" onchange="watson()">
+                <label class="custom-control-label" for="customRadioInline3">Watson & Crick</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline4" name="customRadioInline" class="custom-control-input" onchange='visifyBrowser()' >
+                <label class="custom-control-label" for="customRadioInline4">Upload pdf</label>
+            </div>
 
 
 
             <!-- FILE BROWSE -->
-            <div class="row">
+            <div class="row invisible" id="pdfButton" attic="visible">
                 <div class="input-group mb-3 col-4 offset-4">
 
                     <div class="custom-file">
