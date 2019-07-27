@@ -2,6 +2,10 @@ section#promo {
   height: 46rem;
 }
 
+article.tallPaul {
+	background-color: yellow;
+	min-height: 30rem;
+}
 
 div.content {
   border: 0.1rem solid white;
