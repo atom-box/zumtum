@@ -3,8 +3,19 @@ section#promo {
 }
 
 article.tallPaul {
-	background-color: yellow;
 	min-height: 30rem;
+}
+
+textarea.border  {
+	
+}
+
+.col-form-label {
+	margin-top: -0.6rem;
+}
+
+article#tab-two {
+	background-color: yellow;
 }
 
 div.content {
