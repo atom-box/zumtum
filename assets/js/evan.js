@@ -26,11 +26,14 @@
 function watson(){
 	let inputZoneEl = document.getElementById('zone-of-input');
 	inputZoneEl.innerHTML = watsonString;
+    console.log('watson')
 }
 
 function eisenhower(){
 	let inputZoneEl = document.getElementById('zone-of-input');
 	inputZoneEl.innerHTML = eisenhowerString;
+    console.log('eisenhower')
+
 }
 
 function visifyBrowser(){
@@ -64,8 +67,7 @@ var questionings = [];
 // String of
 // sample reading 1
 // Accessed on 7/25/2019 from 
-var watsonString = `
- 	We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest. A structure for nucleic acid has already been proposed by Pauling and Corey (1). They kindly made their manuscript available to us in advance of publication. Their model consists of three intertwined chains, with the phosphates near the fibre axis, and the bases on the outside. In our opinion, this structure is unsatisfactory for two reasons: (1) We believe that the material which gives the X-ray diagrams is the salt, not the free acid. Without the acidic hydrogen atoms it is not clear what forces would hold the structure together, especially as the negatively charged phosphates near the axis will repel each other. (2) Some of the van der Waals distances appear to be too small.
+var watsonString = `We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest. A structure for nucleic acid has already been proposed by Pauling and Corey (1). They kindly made their manuscript available to us in advance of publication. Their model consists of three intertwined chains, with the phosphates near the fibre axis, and the bases on the outside. In our opinion, this structure is unsatisfactory for two reasons: (1) We believe that the material which gives the X-ray diagrams is the salt, not the free acid. Without the acidic hydrogen atoms it is not clear what forces would hold the structure together, especially as the negatively charged phosphates near the axis will repel each other. (2) Some of the van der Waals distances appear to be too small.
 
 Another three-chain structure has also been suggested by Fraser (in the press). In his model the phosphates are on the outside and the bases on the inside, linked together by hydrogen bonds. This structure as described is rather ill-defined, and for this reason we shall not comment on it.
 
@@ -88,8 +90,7 @@ MOLECULAR STRUCTURE OF NUCLEIC ACIDS, J. D. WATSON F. H. C. CRICK, 2 April 1953
 // sample reading 2
 // Accessed on 7/25/2019 from http://watsonandcrick.net/paper/
 // There is a great commentary, line by line, at 
-var eisenhowerString = `
-My fellow Americans: Three days from now, after half a century in the service of our country, I shall lay down the responsibilities of office as, in traditional and solemn ceremony, the authority of the Presidency is vested in my successor. This evening I come to you with a message of leave-taking and farewell, and to share a few final thoughts with you, my countrymen.
+var eisenhowerString = `My fellow Americans: Three days from now, after half a century in the service of our country, I shall lay down the responsibilities of office as, in traditional and solemn ceremony, the authority of the Presidency is vested in my successor. This evening I come to you with a message of leave-taking and farewell, and to share a few final thoughts with you, my countrymen.
  Like every other citizen, I wish the new President, and all who will labor with him, Godspeed. I pray that the coming years will be blessed with peace and prosperity for all. Our people expect their President and the Congress to find essential agreement on issues of great moment, the wise resolution of which will better shape the future of the Nation.
 My own relations with the Congress, which began on a remote and tenuous basis when, long ago, a member of the Senate appointed me to West Point, have since ranged to the intimate during the war and immediate post-war period, and, finally, to the mutually interdependent during these past eight years. In this final relationship, the Congress and the Administration have, on most vital issues, cooperated well, to serve the national good rather than mere partisanship, and so have assured that the business of the Nation should go forward. So, my official relationship with the Congress ends in a feeling, on my part, of gratitude that we have been able to do so much together.
 We now stand ten years past the midpoint of a century that has witnessed four major wars among great nations. Three of these involved our own country. Despite these holocausts America is today the strongest, the most influential and most productive nation in the world. Understandably proud of this pre-eminence, we yet realize that America's leadership and prestige depend, not merely upon our unmatched material progress, riches and military strength, but on how we use our power in the interests of world peace and human betterment.
