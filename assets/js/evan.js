@@ -32,8 +32,7 @@ function watson(){
 function canterbury(){
 	let inputZoneEl = document.getElementById('zone-of-input');
 	inputZoneEl.innerHTML = canterburyString;
-    console.log('canterbury')
-
+    console.log('canterbury');
 }
 
 function visifyBrowser(){
@@ -47,12 +46,20 @@ function visifyBrowser(){
 
 /**      P A R S E    to step2      **/
 function parse(){
-    console.log(`button to step 2 was pressed at ${new Date()}`);
     let divCount = 5;
+    let oneDiv = ''
+    manyDivs ='';
+    oneDiv = '<div class="col-sm-4"><input type="text" class="form-control" id="x" placeholder="questions"></div><label for="x" class="col-sm-6 col-form-label to-raise">rephrase the passage as a question</label>';
+
     while (divCount){
-        let oneDiv = '';
+        // one minified div.  am storing the unminified below tab 2, commented out
+        manyDivs += oneDiv;
         divCount--;
     }
+    let el3 = document.getElementById('parsed-divs-go-here');
+    el3.innerHTML = manyDivs;
+    console.log(`length of many divs is ${manyDivs.length} at ${new Date()}`);
+
 }
 
 document.getElementById('go-to-step-two').addEventListener('click',  parse);
@@ -80,9 +87,11 @@ var passages = [];
 // Named in tribute to Mike Hernandez
 var questionings = []; 
 
-// String of
+// String of The Discovery of DNA
 // sample reading 1
-// Accessed on 7/25/2019 from 
+// Accessed on 7/25/2019 from http://watsonandcrick.net/paper/
+// And awesome commentary at https://sandwalk.blogspot.com/2007/07/watson-crick-nature-paper-1953.html#comment-form
+
 var watsonString = `We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest. A structure for nucleic acid has already been proposed by Pauling and Corey (1). They kindly made their manuscript available to us in advance of publication. Their model consists of three intertwined chains, with the phosphates near the fibre axis, and the bases on the outside. In our opinion, this structure is unsatisfactory for two reasons: (1) We believe that the material which gives the X-ray diagrams is the salt, not the free acid. Without the acidic hydrogen atoms it is not clear what forces would hold the structure together, especially as the negatively charged phosphates near the axis will repel each other. (2) Some of the van der Waals distances appear to be too small.
 
 Another three-chain structure has also been suggested by Fraser (in the press). In his model the phosphates are on the outside and the bases on the inside, linked together by hydrogen bonds. This structure as described is rather ill-defined, and for this reason we shall not comment on it.
@@ -101,11 +110,9 @@ It has not escaped our notice that the specific pairing we have postulated immed
 MOLECULAR STRUCTURE OF NUCLEIC ACIDS, J. D. WATSON F. H. C. CRICK, 2 April 1953
 `
 
-
-// String of
+// String of Chaucer's Canterbury Tales, the Prologue
 // sample reading 2
-// Accessed on 7/25/2019 from http://watsonandcrick.net/paper/
-// There is a great commentary, line by line, at 
+// Accessed on 7/27/2019 from https://www.poetryfoundation.org/poems/43926/the-canterbury-tales-general-prologue
 var canterburyString = `Whan that Aprille with his shoures soote,
 The droghte of March hath perced to the roote,
 And bathed every veyne in swich licóur
