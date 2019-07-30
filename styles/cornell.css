@@ -6,6 +6,11 @@ article.tallPaul {
 	min-height: 30rem;
 }
 
+.tab-pane.tallPaul#tab-2 {
+/*not working*/
+}
+
+
 textarea.border  {
 	
 }
@@ -15,10 +20,15 @@ textarea.border  {
 }
 
 article#tab-two {
-	background-color: yellow;
+	width: 60rem;
+	background: gray;
 }
 
 div.content {
   border: 0.1rem solid white;
   /*background-color: rgba(44, 44, 44, 0.1);*/
+}
+
+.wordholder {
+	word-wrap: break-word;
 }
