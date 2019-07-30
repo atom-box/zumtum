@@ -62,10 +62,27 @@ function chunker(s){
     console.log('Made it to first line of CHUNKER.');
     // return ["This", "is", "just", "great:", "PIE,", "and", "noone", "to", "share", "it", "with.", "We'll", "just", "have", "to", "bear", "it", "as", "best", "we", "can."];
 
-    let words = [],
+    let allWords = [],
     parsArr = [];
 
-    words = s.split(" ");
+    /********
+        NEXT ACTION TODO
+        NESTED:
+        OUTERLOOP
+        while allwords > 0
+            INNERLOOP
+            while length is > 0
+                while length is > 0
+                tempWord = allWords.shift();
+                senWords.push(tempWord);
+                punctuatedregex = /.*[?|\.|!]/
+                if length of senwords > 300 OR tempWord == punctuatedregex BREAK;
+        parSens.push(senWords);
+
+
+    *********/
+
+    allWords = s.split(" ");
     console.log(`Yay.  Line 69 has ${words.length} WORDS in the words array.`);
     while (words.length > 0){
         if (words.length < 50){
