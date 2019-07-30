@@ -23,10 +23,10 @@
 
 
 /**         RADIO BUTTONS     **/
-function watson(){
+function darkMatter(){
 	let inputZoneEl = document.getElementById('zone-of-input');
-	inputZoneEl.innerHTML = watsonString;
-    console.log('watson')
+	inputZoneEl.innerHTML = darkString;
+    console.log('darkMatter')
 }
 
 function canterbury(){
@@ -97,22 +97,18 @@ var questionings = [];
 // Accessed on 7/25/2019 from http://watsonandcrick.net/paper/
 // And awesome commentary at https://sandwalk.blogspot.com/2007/07/watson-crick-nature-paper-1953.html#comment-form
 
-var watsonString = `We wish to suggest a structure for the salt of deoxyribose nucleic acid (D.N.A.). This structure has novel features which are of considerable biological interest. A structure for nucleic acid has already been proposed by Pauling and Corey (1). They kindly made their manuscript available to us in advance of publication. Their model consists of three intertwined chains, with the phosphates near the fibre axis, and the bases on the outside. In our opinion, this structure is unsatisfactory for two reasons: (1) We believe that the material which gives the X-ray diagrams is the salt, not the free acid. Without the acidic hydrogen atoms it is not clear what forces would hold the structure together, especially as the negatively charged phosphates near the axis will repel each other. (2) Some of the van der Waals distances appear to be too small.
+var darkString = 'joy'; 
+darkString= `Dark matter is a type of matter thought to be responsible for much of the mass in the universe.
 
-Another three-chain structure has also been suggested by Fraser (in the press). In his model the phosphates are on the outside and the bases on the inside, linked together by hydrogen bonds. This structure as described is rather ill-defined, and for this reason we shall not comment on it.
+The idea arose when astronomers found that the mass of large astronomical objects, figured out from their gravitational effects, was much greater than the mass figured out from the "luminous matter" they contain: stars, gas, and dust.
 
-We wish to put forward a radically different structure for the salt of deoxyribose nucleic acid. This structure has two helical chains each coiled round the same axis (see diagram). We have made the usual chemical assumptions, namely, that each chain consists of phosphate diester groups joining ß-D-deoxyribofuranose residues with 3',5' linkages. The two chains (but not their bases) are related by a dyad perpendicular to the fibre axis. Both chains follow right- handed helices, but owing to the dyad the sequences of the atoms in the two chains run in opposite directions. Each chain loosely resembles Furberg's2 model No. 1; that is, the bases are on the inside of the helix and the phosphates on the outside. The configuration of the sugar and the atoms near it is close to Furberg's 'standard configuration', the sugar being roughly perpendicular to the attached base. There is a residue on each every 3.4 A. in the z-direction. We have assumed an angle of 36° between adjacent residues in the same chain, so that the structure repeats after 10 residues on each chain, that is, after 34 A. The distance of a phosphorus atom from the fibre axis is 10 A. As the phosphates are on the outside, cations have easy access to them.
+Dark matter was first proposed by Jan Oort in 1932 as a reason for the spinning speeds of stars in the Milky Way. Fritz Zwicky in 1933 used dark matter to explain "missing mass" in the spinning speeds of galaxies in clusters. Later, many other observations have suggested that there is dark matter in the universe. The spinning speeds of galaxies,[2] gravitational lensing of background objects, the temperature distribution of hot gas in galaxies and clusters of galaxies: these are some of the examples that make scientists believe in dark matter.
 
-The structure is an open one, and its water content is rather high. At lower water contents we would expect the bases to tilt so that the structure could become more compact.  The novel feature of the structure is the manner in which the two chains are held together by the purine and pyrimidine bases. The planes of the bases are perpendicular to the fibre axis. The are joined together in pairs, a single base from the other chain, so that the two lie side by side with identical z-co-ordinates. One of the pair must be a purine and the other a pyrimidine for bonding to occur. The hydrogen bonds are made as follows : purine position 1 to pyrimidine position 1 ; purine position 6 to pyrimidine position 6.
+According to the Planck mission team, and based on the standard model of cosmology, the total mass–energy of the known universe contains 4.9% ordinary matter, 26.8% dark matter and 68.3% dark energy.[3][4] Thus, dark matter is estimated to make up 84.5% of the total matter in the universe, while dark energy plus dark matter make up 95.1% of the total "stuff" in the universe.[5][6]
 
-If it is assumed that the bases only occur in the structure in the most plausible tautomeric forms (that is, with the keto rather than the enol configurations) it is found that only specific pairs of bases can bond together. These pairs are : adenine (purine) with thymine (pyrimidine), and guanine (purine) with cytosine (pyrimidine).  In other words, if an adenine forms one member of a pair, on either chain, then on these assumptions the other member must be thymine ; similarly for guanine and cytosine. The sequence of bases on a single chain does not appear to be restricted in any way. However, if only specific pairs of bases can be formed, it follows that if the sequence of bases on one chain is given, then the sequence on the other chain is automatically determined.
+Because dark matter does not seem to give off or reflect light, x-rays, or any other radiation, the instruments that are used to find normal matter (like hot gas, stars, planets, and us) can't find dark matter. It seems that dark matter is not made of the same thing as the matter we see every day on Earth. The only way we can tell if dark matter is there, is by how it affects things we can "see" by gravity.
 
-It has been found experimentally (3,4) that the ratio of the amounts of adenine to thymine, and the ration of guanine to cytosine, are always bery close to unity for deoxyribose nucleic acid.
-
-It is probably impossible to build this structure with a ribose sugar in place of the deoxyribose, as the extra oxygen atom would make too close a van der Waals contact. The previously published X-ray data (5,6) on deoxyribose nucleic acid are insufficient for a rigorous test of our structure. So far as we can tell, it is roughly compatible with the experimental data, but it must be regarded as unproved until it has been checked against more exact results. Some of these are given in the following communications. We were not aware of the details of the results presented there when we devised our structure, which rests mainly though not entirely on published experimental data and stereochemical arguments.
-
-It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.  Full details of the structure, including the conditions assumed in building it, together with a set of co-ordinates for the atoms, will be published elsewhere. We are much indebted to Dr. Jerry Donohue for constant advice and criticism, especially on interatomic distances. We have also been stimulated by a knowledge of the general nature of the unpublished experimental results and ideas of Dr. M. H. F. Wilkins, Dr. R. E. Franklin and their co-workers at King's College, London. One of us (J. D. W.) has been aided by a fellowship from the National Foundation for Infantile Paralysis.
-MOLECULAR STRUCTURE OF NUCLEIC ACIDS, J. D. WATSON F. H. C. CRICK, 2 April 1953
+In 2006, a group of scientists claimed that they had found a way to find dark matter.[7] Since dark matter is supposedly very different from normal matter, it is expected to act differently. The scientists observed two far-away galaxy clusters that had crashed into each other at high speed: normal matter would have been scattered nearby after the collision, while dark matter would not. By measuring gravity, they were able to detect what looked like two clouds of dark matter, with a cloud of normal matter (hot gas) in between them. 
 `
 
 // String of Chaucer's Canterbury Tales, the Prologue
