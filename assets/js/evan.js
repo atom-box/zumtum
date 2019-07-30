@@ -44,12 +44,18 @@ function visifyBrowser(){
     console.log(`Attic now has ${el3.getAttribute('attic')}`);
 }
 
-/**      P A R S E    to step2      **/
+/**    Tab2: set up & then  P A R S E          **/
+let initialDiv = '';
+    let el3 = document.getElementById('parsed-divs-go-here');
+    initialDiv = '<div class="form-group row"><div class="col-sm-4"><input type="text" class="form-control" id="x" placeholder="Go back to Step 1 and press Start"></div><label for="x" class="col-sm-6 col-form-label to-raise text-white">No text to read!</label></div>';
+    el3.innerHTML = initialDiv;
+
+
 function parse(){
     let divCount = 5;
-    let oneDiv = ''
+    let oneDiv = '',
     manyDivs ='';
-    oneDiv = '<div class="form-group row"><div class="col-sm-4"><input type="text" class="form-control" id="x" placeholder="questions"></div><label for="x" class="col-sm-6 col-form-label to-raise">fjkl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;lakskl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;lakskl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;laksdjf</label></div>';
+    oneDiv = '<div class="form-group row"><div class="col-sm-4"><input type="text" class="form-control" id="x" placeholder="questions"></div><label for="x" class="col-sm-6 col-form-label to-raise text-white">fjkl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;lakskl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;lakskl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;laksdjf</label></div>';
 
     while (divCount){
         // one minified div.  am storing the unminified below tab 2, commented out
@@ -63,7 +69,6 @@ function parse(){
 }
 
 document.getElementById('go-to-step-two').addEventListener('click',  parse);
-
 
 
 
