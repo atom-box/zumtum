@@ -1,4 +1,3 @@
-/**         TESTs     **/
 /*
    Zumtum  Copyright (C) 2019  Evan Genest
     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
@@ -9,29 +8,36 @@
 */
 
 
+/**         TESTs     **/
+    // var input1 = document.getElementById('zone-of-input');
+    // console.log(`Seen in text input zone: ${input1}`);
+    // var kInputZone = [];
+    // for (k in input1){
+    //     kInputZone.push(k);
+    // }
+    // console.log(`Its keys: ${kInputZone}`);
+    // console.log(`Value: ${input1.value}`);
+    // console.log(`type: ${input1.type}`);
+    // console.log(`textlength: ${input1.textlength}`);
+
+
 /**          TOGGLEs     **/
         var el1 = document.getElementById('instructions-place');
     
-        function instructionsToggle(){
-            el1.innerHTML = "Lather, Rinse, Repeat";
-        }
-
         function fileLoaderToggle(){
             // Unhide.       Element should have a bootstrap explanation beneath and be grayed out by bootstrap.
         }
 
-
-
 /**         RADIO BUTTONS     **/
 function darkMatter(){
-	let inputZoneEl = document.getElementById('zone-of-input');
-	inputZoneEl.innerHTML = darkString;
+    let inputZoneEl = document.getElementById('zone-of-input');
+    inputZoneEl.innerHTML = darkString;
     console.log('darkMatter')
 }
 
 function canterbury(){
-	let inputZoneEl = document.getElementById('zone-of-input');
-	inputZoneEl.innerHTML = canterburyString;
+    let inputZoneEl = document.getElementById('zone-of-input');
+    inputZoneEl.innerHTML = canterburyString;
     console.log('canterbury');
 }
 
@@ -50,13 +56,57 @@ let initialDiv = '';
     initialDiv = '<div class="form-group row"><div class="col-sm-4"><input type="text" class="form-control" id="x" placeholder="Go back to Step 1 and press Start"></div><label for="x" class="col-sm-6 col-form-label to-raise text-white">No text to read!</label></div>';
     el3.innerHTML = initialDiv;
 
+// ARGS a string: the long input text
+// RETURNS an array of strings of sensible length for Tab2
+function chunker(s){
+    console.log('Made it to first line of CHUNKER.');
+    // return ["This", "is", "just", "great:", "PIE,", "and", "noone", "to", "share", "it", "with.", "We'll", "just", "have", "to", "bear", "it", "as", "best", "we", "can."];
+
+    let words = [],
+    parsArr = [];
+
+    words = s.split(" ");
+    console.log(`Yay.  Line 69 has ${words.length} WORDS in the words array.`);
+    while (words.length > 0){
+        if (words.length < 50){
+            parsArr.push(words);
+            words = "";
+        } else if (words.length >= 50){
+            parsArr.push(words.splice(0, 50));
+        } else {
+            parsArr.push('Not supposed to see this');
+        }
+    }
+    // empty array means 'skip to new display block'
+    return parsArr;
+}
 
 function parse(){
-    let divCount = 5;
-    let oneDiv = '',
-    manyDivs ='';
-    oneDiv = '<div class="form-group row"><div class="col-sm-4"><input type="text" class="form-control" id="x" placeholder="questions"></div><label for="x" class="col-sm-6 col-form-label to-raise text-white">fjkl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;lakskl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;lakskl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;laksdjf</label></div>';
+    // warn if no input
+    var input1 = document.getElementById('zone-of-input');
+    if (input1.value.length < 10){
+        console.log('Please enter a text.');
+        return;
+    }
+    // console.log(`Value after click: ${input1.value}`);
+    // console.log(`type after click: ${input1.type}`);
+    // console.log(`textlength after click: ${input1.textlength}`);
 
+// FILL AN ARRAY WITH CHUNKS
+
+    var chunks = []
+    , divCount = 0
+    , oneDiv = ''
+    , manyDivs ='';
+
+    chunks = chunker(input1.value);
+
+console.log(`Random value from the words: ${chunks[0]}`);
+console.log(`Random value from the words: ${chunks[0][0]}`);
+console.log(`Random value from the words: ${chunks[1][1]}`);
+
+
+    oneDiv = '<div class="form-group row"><div class="col-sm-4"><input type="text" class="form-control" id="x" placeholder="questions"></div><label for="x" class="col-sm-6 col-form-label to-raise text-white">fjkl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;lakskl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;lakskl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;laksdjf</label></div>';
     while (divCount){
         // one minified div.  am storing the unminified below tab 2, commented out
         manyDivs += oneDiv;
@@ -92,13 +142,12 @@ var passages = [];
 // Named in tribute to Mike Hernandez
 var questionings = []; 
 
-// String of The Discovery of DNA
+// String of Wikipedia article: Dark Matter
 // sample reading 1
-// Accessed on 7/25/2019 from http://watsonandcrick.net/paper/
-// And awesome commentary at https://sandwalk.blogspot.com/2007/07/watson-crick-nature-paper-1953.html#comment-form
+// Accessed on 7/30/2019 from  https://simple.wikipedia.org/wiki/Dark_matter on July 30, 2019.
 
 var darkString = 'joy'; 
-darkString= `Dark matter is a type of matter thought to be responsible for much of the mass in the universe.
+darkString = `Dark matter is a type of matter thought to be responsible for much of the mass in the universe.
 
 The idea arose when astronomers found that the mass of large astronomical objects, figured out from their gravitational effects, was much greater than the mass figured out from the "luminous matter" they contain: stars, gas, and dust.
 
@@ -109,6 +158,8 @@ According to the Planck mission team, and based on the standard model of cosmolo
 Because dark matter does not seem to give off or reflect light, x-rays, or any other radiation, the instruments that are used to find normal matter (like hot gas, stars, planets, and us) can't find dark matter. It seems that dark matter is not made of the same thing as the matter we see every day on Earth. The only way we can tell if dark matter is there, is by how it affects things we can "see" by gravity.
 
 In 2006, a group of scientists claimed that they had found a way to find dark matter.[7] Since dark matter is supposedly very different from normal matter, it is expected to act differently. The scientists observed two far-away galaxy clusters that had crashed into each other at high speed: normal matter would have been scattered nearby after the collision, while dark matter would not. By measuring gravity, they were able to detect what looked like two clouds of dark matter, with a cloud of normal matter (hot gas) in between them. 
+
+[Retrieved from https://simple.wikipedia.org/wiki/Dark_matter on July 30, 2019.]
 `
 
 // String of Chaucer's Canterbury Tales, the Prologue
