@@ -63,7 +63,24 @@ function chunker(s){
     // return ["This", "is", "just", "great:", "PIE,", "and", "noone", "to", "share", "it", "with.", "We'll", "just", "have", "to", "bear", "it", "as", "best", "we", "can."];
 
     let allWords = [],
-    parsArr = [];
+    senWords = [],
+    parSens = [],
+    tempWord = '',
+    success = 0;
+    allWords = s.split(' ');
+    // outerloop, loads outer array
+    while (allWords.length > 0){
+        // innerloop, loads inner array
+        // todo this will only check 300length
+        while (senWords.length < 300 && tempword !== "punctuated..."){
+            success = senWords.push(allwords.shift());
+            console.log(`${allWords.length} - - - ${success}`);
+        }
+        parSens.push(senWords);
+        senWords = [];
+    }
+    return parSens;
+    }
 
     /********
         NEXT ACTION TODO
@@ -82,21 +99,21 @@ function chunker(s){
 
     *********/
 
-    allWords = s.split(" ");
-    console.log(`Yay.  Line 69 has ${words.length} WORDS in the words array.`);
-    while (words.length > 0){
-        if (words.length < 50){
-            parsArr.push(words);
-            words = "";
-        } else if (words.length >= 50){
-            parsArr.push(words.splice(0, 50));
-        } else {
-            parsArr.push('Not supposed to see this');
-        }
-    }
-    // empty array means 'skip to new display block'
-    return parsArr;
-}
+//     allWords = s.split(" ");
+//     console.log(`Yay.  Line 69 has ${words.length} WORDS in the words array.`);
+//     while (words.length > 0){
+//         if (words.length < 50){
+//             parsArr.push(words);
+//             words = "";
+//         } else if (words.length >= 50){
+//             parsArr.push(words.splice(0, 50));
+//         } else {
+//             parsArr.push('Not supposed to see this');
+//         }
+//     }
+//     // empty array means 'skip to new display block'
+//     return parsArr;
+// }
 
 function parse(){
     // warn if no input
@@ -116,6 +133,7 @@ function parse(){
     , oneDiv = ''
     , manyDivs ='';
 
+    // turn the enormous input string into an array-of-arrays
     chunks = chunker(input1.value);
 
 console.log(`Random value from the words: ${chunks[0]}`);
