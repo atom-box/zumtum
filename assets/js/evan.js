@@ -19,6 +19,8 @@
     // console.log(`Value: ${input1.value}`);
     // console.log(`type: ${input1.type}`);
     // console.log(`textlength: ${input1.textlength}`);
+    //${chunks[0]}`);  returns a 300 word paragraph
+    // ${chunks[0][0]}`); // returns a single word
 
 
 /**          TOGGLEs     **/
@@ -63,21 +65,28 @@ function chunker(s){
     // return ["This", "is", "just", "great:", "PIE,", "and", "noone", "to", "share", "it", "with.", "We'll", "just", "have", "to", "bear", "it", "as", "best", "we", "can."];
 
     let allWords = [],
-    senWords = [],
-    parSens = [],
-    tempWord = '',
-    success = 0;
-    allWords = s.split(' ');
+    senWords = [], // sentence [,,]
+    parSens = [], // paragraph [[,,],[,,],[,,]]
+    tempWord = '', // one word; a string
+    success = 0; // debugging flag.  not for logic.
+    allWords = s.split(' '); [,,,,,,,,,,,,,,]
     // outerloop, loads outer array
     while (allWords.length > 0){
         // innerloop, loads inner array
         // todo this will only check 300length
-        while (senWords.length < 300 && tempword !== "punctuated..."){
-            success = senWords.push(allwords.shift());
-            console.log(`${allWords.length} - - - ${success}`);
+        
+        while (senWords.length < 300){
+            tempWord = allWords.shift();
+            if (tempWord === "punctuatedregex..."){
+                success = senWords.push(tempWord);
+                console.log(`allWords: ${allWords.length} - - - nascent paragraph ${success}`);
+                break;
+            }
+            success = senWords.push(tempWord);
+            console.log(`allWords: ${allWords.length} - - - nascent paragraph ${success}`);
         }
-        parSens.push(senWords);
-        senWords = [];
+        parSens.push(senWords); // put sentence on 
+        senWords = []; // clear the sentence, ready to go again
     }
     return parSens;
     }
@@ -136,9 +145,9 @@ function parse(){
     // turn the enormous input string into an array-of-arrays
     chunks = chunker(input1.value);
 
-console.log(`Random value from the words: ${chunks[0]}`);
-console.log(`Random value from the words: ${chunks[0][0]}`);
-console.log(`Random value from the words: ${chunks[1][1]}`);
+// console.log(`Random value from the words: ${chunks[0]}`); // returns a 300 word paragraph
+console.log(`First sentence, first word: ${chunks[0][0]}`); // returns a single word
+console.log(`Second sentence, seventh word: ${chunks[1][6]}`); // returns a single word
 
 
     oneDiv = '<div class="form-group row"><div class="col-sm-4"><input type="text" class="form-control" id="x" placeholder="questions"></div><label for="x" class="col-sm-6 col-form-label to-raise text-white">fjkl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;lakskl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;lakskl;asdjf;lkasjdf;lkajsl;dfj;lasjdf;lajsfd;lkjas;ldf;aslkdfa;lksdfj;laksdjf</label></div>';
