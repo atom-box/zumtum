@@ -31,18 +31,78 @@
         }
 
 
+
+
+
 // overarching object: tt -----o-----o-----o-----o
 let tt = {
+    bigString: '',
+    lex = [], // holds [[a,b],[c,d],[e,f,g]]
+    allWords = [],  // holds [a,b,c,d]
+    senWords = [], // TODO in lex [][,,,,,]
+    parSens = [], // in LEX [[,,],[,,],[,,]]
+    tempWord = '', // one word; a string
+    success = 0; // debugging flag.  not for logic.
 
-/**         RADIO BUTTONS     **/
-deliver:  function(sRequest){
-    let inputZoneEl = document.getElementById('zone-of-input');
+// /**         RADIO BUTTONS     **/
+// deliver:  function(sRequest){
+//     let inputZoneEl = document.getElementById('zone-of-input');
+//     inputZoneEl.innerHTML = lib[sRequest];
+//     console.log(`Found ${sRequest.length} long data.`)
+// },
+
+// 1 1 1 1 1 1 1 1 1 11111111111
+// * Accepts elementID from page
+// * Returns nothing.  
+// * Sets this.bigString
+setBigString: function(e){
+    let inputZoneEl = document.getElementById(e);
     inputZoneEl.innerHTML = lib[sRequest];
-    console.log(`Found ${sRequest.length} long data.`)
-}
+    console.log(`Found ${this.bigString}. It is ${this.bigString.length} long.`)
+    this.bigString = inputZoneEl.value;
+},
+
+// 2 2 2 2 2 2 2 2 2222222222222222
+// * Accepts any string
+// * Accesses nothing
+// * Returns an array-of-arrays
+makeArrOfArrs: function(){
+    console.log(`Accessing length of ${this.bigString.length} long.`);
+    return [[5,6],[7,8],[9,10],[11,12]];
+},
+
+// 3 3 3 3 3 3 3 3 3 33333333333333
+// * Accepts any array of arrays AND an ID from DOM;
+// * Accesses the ArrOfArrs internally
+// * Installs a bunch of HTML divs in the webpage
+deployDivs: function(){
+    console.log(`Received thing is ${s.length} long.`);
+},
+
+// 4 4 4 4 4 4 4 4 4 444444444444444
+// * Accepts nothing
+// * Accesses the internal 2d array
+// * Returns a string summarizing number of words in array
+tally: function(){
+    console.log();
+},
+
+// 5 5 5 5 5 5 5 55555555555555
+// * Accepts nothing
+// * Internally calls some funcs above
+// * takes the input div on DOM-1 to output divs in DOM-2
+digest: function(){
+    console.log();
+},
 
 
-}
+
+
+
+}  // ----endofgiant_TT
+
+
+
 
 /**         RADIO BUTTONS     **/
 
@@ -62,6 +122,8 @@ function visifyBrowser(){
     console.log(`Attic now has ${el3.getAttribute('attic')}`);
 }
 
+
+
 /**    Tab2: set up & then  P A R S E          **/
 let initialDiv = '';
     let el3 = document.getElementById('parsed-divs-go-here');
@@ -74,12 +136,8 @@ function chunker(s){
     console.log('Made it to first line of CHUNKER.');
     // return ["This", "is", "just", "great:", "PIE,", "and", "noone", "to", "share", "it", "with.", "We'll", "just", "have", "to", "bear", "it", "as", "best", "we", "can."];
 
-    let allWords = [],
-    senWords = [], // sentence [,,]
-    parSens = [], // paragraph [[,,],[,,],[,,]]
-    tempWord = '', // one word; a string
-    success = 0; // debugging flag.  not for logic.
-    allWords = s.split(' '); [,,,,,,,,,,,,,,]
+
+    allWords = s.split(' '); //[,,,,,,,,,,,,,,]
     // outerloop, loads outer array
     while (allWords.length > 0){
         // innerloop, loads inner array
@@ -206,6 +264,25 @@ questionings: [],
 // String of Wikipedia article: Dark Matter
 // sample reading 1
 // Accessed on 7/30/2019 from  https://simple.wikipedia.org/wiki/Dark_matter on July 30, 2019.
+
+// 1 1 1 1 1 1 1 1 111111111
+deliver: function(){
+    console.log();
+},
+
+// 2 2 2 2 2 2 2 2 2 22222222
+stashCustomStr: function(){
+    console.log();
+},
+
+// 3 3 3 3 3 3 3 3 3333333333
+releaseCustomStr: function(){
+    console.log();
+},
+
+
+
+
 darkString: `Dark matter is a type of matter thought to be responsible for much of the mass in the universe.
 
 The idea arose when astronomers found that the mass of large astronomical objects, figured out from their gravitational effects, was much greater than the mass figured out from the "luminous matter" they contain: stars, gas, and dust.
