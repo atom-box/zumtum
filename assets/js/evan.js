@@ -37,12 +37,12 @@
 // overarching object: tt -----o-----o-----o-----o
 let tt = {
     bigString: '',
-    lex = [], // holds [[a,b],[c,d],[e,f,g]]
-    allWords = [],  // holds [a,b,c,d]
-    senWords = [], // TODO in lex [][,,,,,]
-    parSens = [], // in LEX [[,,],[,,],[,,]]
-    tempWord = '', // one word; a string
-    success = 0; // debugging flag.  not for logic.
+    lex: [], // holds [[a,b],[c,d],[e,f,g]]
+    allWords: [],  // holds [a,b,c,d]
+    senWords: [], // TODO in lex [][,,,,,]
+    parSens: [], // in LEX [[,,],[,,],[,,]]
+    tempWord: '', // one word; a string
+    success: 0, // debugging flag.  not for logic.
 
 // /**         RADIO BUTTONS     **/
 // deliver:  function(sRequest){
@@ -234,7 +234,7 @@ console.log(`Second sentence, seventh word: ${chunks[1][6]}`); // returns a sing
 
 }
 
-document.getElementById('go-to-step-two').addEventListener('click',  parse);
+document.getElementById('go-to-step-two').addEventListener('click',  tt.digest);
 
 
 
@@ -265,23 +265,32 @@ questionings: [],
 // sample reading 1
 // Accessed on 7/30/2019 from  https://simple.wikipedia.org/wiki/Dark_matter on July 30, 2019.
 
+// * Accepts arg for name of what to deliver
+// 
 // 1 1 1 1 1 1 1 1 111111111
-deliver: function(){
-    console.log();
+deliver: function(what){
+    console.log(`Line 270 for delivering [${what}]?`);
+    var el3 = document.getElementById('zone-of-input');
+    el3.innerHTML = lib[what];
+
 },
 
 // 2 2 2 2 2 2 2 2 2 22222222
-stashCustomStr: function(){
-    console.log();
+stashCustomStr: function(s){
+        var el3 = document.getElementById(s);
+    console.log(`Found the element. Grabbed ${el3.value} and name is ${el3.name}`);
+
 },
 
 // 3 3 3 3 3 3 3 3 3333333333
-releaseCustomStr: function(){
-    console.log();
+releaseCustomStr: function(s){
+    var el3 = document.getElementById(s);
+    console.log(`The value in the element is ${el3.value} and name is ${el3.name}`);
 },
 
 
-
+stashedByUser: `
+The open nature of the World Wide Web presents incredible opportunities for people who want to create websites or online applications. To take full advantage of the web's capabilities, you need to know how to use them. Explore the links below to learn more about various web technologies.`,
 
 darkString: `Dark matter is a type of matter thought to be responsible for much of the mass in the universe.
 

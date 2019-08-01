@@ -79,15 +79,15 @@
 
             <!-- SELECT INPUT SOURCE -->
             <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input" checked>
+                <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input" onchange="lib.deliver('stashedByUser')" checked>
                 <label class="custom-control-label" for="customRadioInline1">User text</label>
             </div>
             <div class="custom-control custom-radio custom-control-inline custom-radio-success">
-                <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input" onchange="tt.deliver('canterburyString')">
+                <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input" onchange="lib.deliver('canterburyString')">
                 <label class="custom-control-label" for="customRadioInline2">Canterbury Prologue</label>
             </div>
             <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline3" name="customRadioInline" class="custom-control-input" onchange="tt.deliver('darkString')">
+                <input type="radio" id="customRadioInline3" name="customRadioInline" class="custom-control-input" onchange="lib.deliver('darkString')">
                 <label class="custom-control-label" for="customRadioInline3">Dark Matter</label>
             </div>
             <div class="custom-control custom-radio custom-control-inline">
