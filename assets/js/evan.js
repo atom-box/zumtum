@@ -33,7 +33,6 @@
 
 
 
-
 // overarching object: tt -----o-----o-----o-----o
 let tt = {
     bigString: '',
@@ -289,8 +288,7 @@ releaseCustomStr: function(s){
 },
 
 
-stashedByUser: `
-The open nature of the World Wide Web presents incredible opportunities for people who want to create websites or online applications. To take full advantage of the web's capabilities, you need to know how to use them. Explore the links below to learn more about various web technologies.`,
+stashedByUser: `Paste your text here`,
 
 darkString: `Dark matter is a type of matter thought to be responsible for much of the mass in the universe.
 
@@ -1211,12 +1209,14 @@ And with that word we ryden forth oure weye;
 And he bigan with right a myrie cheere
 His tale anon, and seyde in this manére.
 
-
-
 `
 
 
 } // end of LIB object-------my 'database'
+
+
+/***  Initialize the page */
+document.getElementById('zone-of-input').innerHTML = lib.stashedByUser; // Tab 1 box contents.
 
 
 // Parsing probs to anticipate: blank lines.   Eccentric line returns, like a sentence fragment per line.
