@@ -31,6 +31,10 @@ Node.js](https://www.goodreads.com/book/show/21510195-web-development-with-node-
 * Applying for jobs and opensource
 
 ## After today
+* push the button and get
+- next screen
+- move the stuff
+- parse the stuff
 * Store the data
 * Set up a username and password
 * Pipe in APIs from SciURLs
