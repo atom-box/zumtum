@@ -3,14 +3,15 @@
 [Run ZumTum!](https://atom-box.github.io/zuntum/)
 ## What's going on here
 I'm building a [reading app](https://atom-box.github.io/quanta/):
-1. User drops in a text and presses a button.
+1. The user drops in a text and presses a button.
 2. The text is rendered in chunks along the right side of the page.  Matching text-entry forms on the left allow the user to type in questions.
-3.  The following screen presents only the users questions as uneditable rendered text on the left.  On the right, a 2000 character (300 word) text-entry form allows the user to type their paragraph that answers the questions.  
-This is Cornell notes, applied to reading of news or text, chosen by the user.	 
+3.  The following screen presents only the users questions as uneditable rendered text on the left.  On the right, a 2000 character (300 word) text-entry form allows the user to type their paragraph that answers the questions. <br> 
+This is Cornell notes, applied to reading of news or text, chosen by the user.	
+
 
 
 ## Most Valuable Player
-I'm no genius.  I'm flipping back and forth in this book to build an api to serve persistant data to this front end.  I'm currently quite delayed by lots of resume writing and job applying.
+I'm no genius.  I'm flipping back and forth in this book to build an api to serve persistant data to this front end.  I'm currently quite delayed by lots of resume writing and job applying.<br>
 ![Oreilly Node book](https://github.com/atom-box/zuntum/blob/master/oreilly_160x210.png)
 
 # Todos for this week:
