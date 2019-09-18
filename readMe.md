@@ -1,6 +1,6 @@
 # Zuntum Reader Rememberer
-![Screenshot of the Zumtum App](https://github.com/atom-box/zuntum/blob/master/zumScreenshot_188x99.png)<br><br>
-[Run ZumTum!](index.html)
+![Screenshot of the Zumtum App](https://github.com/atom-box/zuntum/blob/master/zum_310x165.png)<br><br>
+[Run ZumTum!](https://atom-box.github.io/zuntum/)
 ## What's going on here
 I'm building a [reading app](https://atom-box.github.io/quanta/):
 1. User drops in a text and presses a button.
@@ -11,7 +11,7 @@ This is Cornell notes, applied to reading of news or text, chosen by the user.
 
 ## Most Valuable Player
 I'm no genius.  I'm flipping back and forth in this book to build an api to serve persistant data to this front end.  I'm currently quite delayed by lots of resume writing and job applying.
-![Oreilly Node book](https://github.com/atom-box/zuntum/blob/master/oreilly.jpg)
+![Oreilly Node book](https://github.com/atom-box/zuntum/blob/master/oreilly_160x210.png)
 
 # Todos for this week:
 * Small brand centered at top
