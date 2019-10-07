@@ -1,4 +1,4 @@
-# Zuntum Reader Rememberer
+# Zumtum Reader Rememberer
 ![Screenshot of the Zumtum App](https://github.com/atom-box/zuntum/blob/master/zum_310x165.png)<br><br>
 [Run ZumTum!](https://atom-box.github.io/zuntum/)
 ## What's going on here
