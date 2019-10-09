@@ -1,6 +1,6 @@
 # Zumtum Reader Rememberer
 ![Screenshot of the Zumtum App](https://github.com/atom-box/zuntum/blob/master/zum_310x165.png)<br><br>
-[Run ZumTum!](https://atom-box.github.io/zuntum/)
+[Run ZumTum!](https://atom-box.github.io/zumtum/)
 ## What's going on here
 This is a [study app](https://atom-box.github.io/quanta/):
 1. Screen 1: The user drops in a text and presses a button.
