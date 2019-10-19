@@ -3289,10 +3289,20 @@ Flourish. Exeunt Omnes.
 FINIS. THE TRAGEDIE OF MACBETH.
 `;
 
-const reggie = /\n/;
+function capper(oldArr, capString) {
+	let cappedArray = [];
+	while (oldArr.length > 0){
+		cappedArray.push( oldArr.shift() +  capString  );
+	}
+	return cappedArray;
+}
+
+
+const reggie = /\n\n/;
 let blobs = macbeth.split(reggie);
 console.log(`Number of blobs: ${blobs.length}.`);
 console.log(`Chars in first blob: ${blobs[0].length}.`);
+console.log(  capper(blobs, '------||--') );
 
 
 
