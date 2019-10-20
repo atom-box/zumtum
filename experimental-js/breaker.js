@@ -3297,14 +3297,38 @@ function capper(oldArr, capString) {
 	return cappedArray;
 }
 
+// recommended min chars is 1000 ~16 lines...
+// This will mutate the passed in array
+// Accepts: Array of paragraphstrings, min-number of chars for display div
+// Returns a new array with some of the members consolidated
+function consolidateSmallBlobs(oldArr, minChars) {
+	while (oldArr.length > 0){
+		console.log('rrrrrrppppp... ' + oldArr.shift() );
+	}
+	return ["Tony Hawk skateboarder is.", "Is famous. ", "Leif Garret is not famous.",  "Laird Hamilton is famous and strong."];
+} 
 
-const reggie = /\n\n/;
-let blobs = macbeth.split(reggie);
-console.log(`Number of blobs: ${blobs.length}.`);
+	/*
+if(nowblob + nextblob < minChars){combineem}
+
+
+
+
+	*/
+
+const reggie1 = /\n\n/;
+let blobs = macbeth.split(reggie1);
+console.log(`Before there are ${blobs.length} blobs.`);
 console.log(`Chars in first blob: ${blobs[0].length}.`);
-console.log(  capper(blobs, '------||--') );
+let cappedArray = capper(blobs, '|__|__|__|')
+// console.log(  capper(blobs, '------||--') );
+// console.log(cappedArray);
+console.log(`# of blobs: ${cappedArray.length}`) // good now
 
-
+let x123 = consolidateSmallBlobs(cappedArray, 1000);
+console.log(`After there are ${x123.length} blobs.`);
+console.log(`They are ${x123}.`);
+// implement an 1120 check.  append to reach 1120 
 
 
 
