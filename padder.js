@@ -25,6 +25,17 @@ const showThree = function() {
 	return tags.slice(0,3);
 }
 
+/*
+** When passed one entire tag, 
+** returns just the fixed year as a string
+** e.g. passing '4' returns 2004
+** e.g. passing '99' returns 1999
+*/
+const cleanYear = function(t) {
+	let reggie = /^[0-9]+/;
+	let frag = t.match(reggie)[0];
+	return frag; // todo THIS IS RETURNING RAW YEAR
+}
 
 
 
@@ -52,6 +63,14 @@ if (option !== undefined){
 		case 'showthreetags':
 			console.log(`We see_______${showThree()}`);
 			break;
+		case 'cleanyear':
+			console.log(`We see_______${cleanYear(tags[0])}`);
+			break;
+
+
+
+
+
 		default: 
 			console.log(`:::${option}::: not recognized.`)
 	}
