@@ -7,6 +7,7 @@
     A bunch more needs to be done still to the license.
 */
 
+console.log(`chirpt and burpt at ${now}`)
 
 /**         TESTs     **/
     // var input1 = document.getElementById('zone-of-input');
