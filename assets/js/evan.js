@@ -1,3 +1,6 @@
+(() => {console.log("evan.js loaded properly!")})();
+
+alert("I apologize. This stage was working great but during revisions something got rolled back the wrong way.  I just discovered that now (2021!).  And I am busy with other things right now... -Evan")
 /*
    Zumtum  Copyright (C) 2019  Evan Genest
     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
@@ -7,6 +10,7 @@
     A bunch more needs to be done still to the license.
 */
 
+const now = new Date();
 console.log(`chirpt and burpt at ${now}`)
 
 /**         TESTs     **/
@@ -30,7 +34,7 @@ function buzz(){
 
 /**          TOGGLEs     **/
         var el1 = document.getElementById('instructions-place');
-    
+
         function fileLoaderToggle(){
             // Unhide.       Element should have a bootstrap explanation beneath and be grayed out by bootstrap.
         }
@@ -57,7 +61,7 @@ let tt = {
 
 // 1 1 1 1 1 1 1 1 1 11111111111
 // * Accepts elementID from page
-// * Returns nothing.  
+// * Returns nothing.
 // * Sets this.bigString
 setBigString: function(e){
     let inputZoneEl = document.getElementById(e);
@@ -146,7 +150,7 @@ function chunker(s){
     while (allWords.length > 0){
         // innerloop, loads inner array
         // todo this will only check 300length
-        
+
         while (senWords.length < 300){
             tempWord = allWords.shift();
             if (tempWord === "punctuatedregex..."){
@@ -157,7 +161,7 @@ function chunker(s){
             success = senWords.push(tempWord);
             console.log(`allWords: ${allWords.length} - - - nascent paragraph ${success}`);
         }
-        parSens.push(senWords); // put sentence on 
+        parSens.push(senWords); // put sentence on
         senWords = []; // clear the sentence, ready to go again
     }
     return parSens;
@@ -241,7 +245,7 @@ console.log(`Second sentence, seventh word: ${chunks[1][6]}`); // returns a sing
 document.getElementById('go-to-step-two').addEventListener('click',  tt.digest);
 
 /*
- .----------------.  .----------------. 
+ .----------------.  .----------------.
 | .--------------. || .--------------. |
 | |  ________    | || |   ______     | |
 | | |_   ___ `.  | || |  |_   _ \    | |
@@ -255,26 +259,26 @@ document.getElementById('go-to-step-two').addEventListener('click',  tt.digest);
 */
 
 
-REDECLARE THESE!  Oct 31 2019
+// REDECLARE THESE!  Oct 31 2019
 
 var lib = {}; // namespace
 
-// Array of 
+// Array of
 // 0  Instructions
-// 1, 2, ...   
-lib.messages = []; 
+// 1, 2, ...
+lib.messages = [];
 
 // String of
 // inputted text (giant, from the user or the options menu)
 
-// Array of 
+// Array of
 // 0, 1, 2, ...  Parsed out of user input string
-lib.passages = []; 
+lib.passages = [];
 
-// Array of 
-// 0, 1, 2, ...  Written by the user. 
+// Array of
+// 0, 1, 2, ...  Written by the user.
 // Named in tribute to Mike Hernandez
-lib.questionings= []; 
+lib.questionings= [];
 
 // String of Wikipedia article= Dark Matter
 // sample reading 1
@@ -282,7 +286,7 @@ lib.questionings= [];
 
 // 1 1 1 1 1 1 1 1 111111111
 // * Args are domID, where-to-stash
-// * 
+// *
 lib.stashElementContents = function(id, where){
     var el3 = document.getElementById(id);
     console.log(`Current contents of  ${where} is ${where.value}`);
@@ -293,7 +297,7 @@ lib.stashElementContents = function(id, where){
 
 
 // * Accepts arg for name of what to deliver
-// 
+//
 // 2 2 2 2 2 2 2 2 2 222222222
 lib.deliver = function(what){
     console.log(`Line 270 for delivering [${what}]?`);
@@ -330,7 +334,7 @@ According to the Planck mission team, and based on the standard model of cosmolo
 
 Because dark matter does not seem to give off or reflect light, x-rays, or any other radiation, the instruments that are used to find normal matter (like hot gas, stars, planets, and us) can't find dark matter. It seems that dark matter is not made of the same thing as the matter we see every day on Earth. The only way we can tell if dark matter is there, is by how it affects things we can "see" by gravity.
 
-In 2006, a group of scientists claimed that they had found a way to find dark matter.[7] Since dark matter is supposedly very different from normal matter, it is expected to act differently. The scientists observed two far-away galaxy clusters that had crashed into each other at high speed: normal matter would have been scattered nearby after the collision, while dark matter would not. By measuring gravity, they were able to detect what looked like two clouds of dark matter, with a cloud of normal matter (hot gas) in between them. 
+In 2006, a group of scientists claimed that they had found a way to find dark matter.[7] Since dark matter is supposedly very different from normal matter, it is expected to act differently. The scientists observed two far-away galaxy clusters that had crashed into each other at high speed: normal matter would have been scattered nearby after the collision, while dark matter would not. By measuring gravity, they were able to detect what looked like two clouds of dark matter, with a cloud of normal matter (hot gas) in between them.
 
 [Retrieved from https://simple.wikipedia.org/wiki/Dark_matter on July 30, 2019.]
 `;
@@ -1202,10 +1206,10 @@ Withouten any lenger taryynge.
 
 Amorwe, whan that day gan for to sprynge,
 Up roos oure Hoost and was oure aller cok,
+And there oure Hoost bigan his hors areste,
 And gadrede us togidre alle in a flok;
 And forth we riden, a litel moore than paas,
 Unto the wateryng of Seint Thomas;
-And there oure Hoost bigan his hors areste,
 And seyde, "Lordynges, herkneth, if yow leste:
 Ye woot youre foreward and I it yow recorde.
 If even-song and morwe-song accorde,
@@ -1259,32 +1263,33 @@ el5.addEventListener('blur', buzz);
 
 
 
- //                      _         
- //                     (_)        
- //  _ __ ___     __ _   _   _ __  
- // | '_ ` _ \   / _` | | | | '_ \ 
+ //                      _
+ //                     (_)
+ //  _ __ ___     __ _   _   _ __
+ // | '_ ` _ \   / _` | | | | '_ \
  // | | | | | | | (_| | | | | | | |
  // |_| |_| |_|  \__,_| |_| |_| |_|
-                                                               
+
 // This EVAN.JS is meant to load into .hmtl but to test it, just
 // say NODE EVAN.JS at the command line and one of the switch args below
 
 if (process.argv[2] !== undefined) {
     switch (process.argv[2]) {
-        case 'node': 
+        case 'node':
             let newNode = testNodeConstructor(config.soonID);
             console.log(newNode.first);
             console.log(newNode.phone);
             console.log(`About to set next as ${newNode.fwd}`);
             config.soonID = newNode.fwd;
             break;
-            
-        case 'id': 
+
+        case 'id':
             console.log(idBestow(config.usedIDs));
             break;
 
- 
+
 
         default:
-            console.log('no optional args recognized');     
+            console.log('no optional args recognized');
     }
+}
